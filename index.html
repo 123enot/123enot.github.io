@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <title>01</title>
+  <meta charset="utf-8">
+  <style>
+body {
+   background-color: #92a8d1;
+   
+}
+
+.additionalBackground {
+  position: fixed;
+  top: -20px; left: -95px;
+  opacity: .7;
+  z-index: -1;
+}
+
+div#header, div#navBar, div#footer {
+  width: 100%;
+  z-index: 2;
+}
+
+div#invisibleHeader {
+  visibility: hidden;
+  margin-left: .05em;
+  border: 2px solid green;
+}
+
+div#header h2 a {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: lightyellow;
+  margin: -.5em 0 0 0;
+  padding: .1em;
+  
+}
+
+div#header {
+  min-height: 50px;
+  max-height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: yellow;
+  margin-left: .02em;
+  background-image: linear-gradient(maroon, brown);
+  
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+div#navBar {
+  clear: both;
+  position: fixed;
+  top: 48px;
+  left: .05em;
+  right: 0;
+  margin: .1em 0;
+  background-color: #92a8d1;
+}
+
+div#navBar ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0 0 0 20em;
+  display: inline-block;
+}
+
+div#navBar ul li{
+  color: maroon;
+  display: inline;
+  font-size: .8em;
+  padding: .1em; 
+}
+
+
+div#navBar li a {
+  color: maroon;
+  text-decoration: none;
+  padding: .1em .2em;
+  margin-bottom: .1em;
+  display: inline-block;
+   
+}
+
+div#navBar a:hover {
+  color: white;
+  text-decoration: none;
+  padding: .1em .2em;
+  display: inline-block;
+  background-color: brown;
+}
+
+form#formForLog {
+  min-width: 50px;
+  max-width: 203px;
+  width: 203px;
+  position: fixed;
+  margin: -4px;
+  right: -177px;
+  top: 80px;
+  float: right;
+  
+  font-size: .8em;
+  font-family: serif;
+  border: none;
+  
+}
+
+form#formForLog:hover {
+  right: 0;
+}
+
+fieldset {
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  
+  background-color: brown;
+  border-left: 20px solid #fa6;
+  border-radius: 12px 0 0 12px;
+  color: lightyellow;
+}
+
+fieldset::before {
+  content: 'log in';
+  color: maroon;
+  position: absolute;
+  transform: rotate(-90deg);
+  font-family: 'helvetica';
+  font-size: 1.5em;
+  left: -12px;
+  bottom: 41%;
+}
+
+input[type="text"], input[type="password"] {
+  width: 95%;
+  display: block;
+  margin: 0 auto .2em auto;
+  vertical-align: center;
+  border: none;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  background-color: lightyellow;
+} 
+
+input[type="submit"] {
+  min-width: 50px;
+  max-width: 50%;
+  display: block;
+  margin: .4em auto 0 auto;
+  padding: .2em;
+  border: 1px solid brown;
+  border-radius: 3px;
+  background-image: linear-gradient(rgb(245, 145, 122), brown);
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-image: linear-gradient(rgb(245, 145, 122), maroon);
+  
+}
+
+.with-delay {
+  
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+div#sidebar {
+  position: fixed;
+  left: 60px;
+  top: -80px;
+  width: 12%;
+  min-width: 150px;
+  text-align: center;
+  display: inline-block;
+  float: left;
+  z-index: 1; 
+  margin: .8em 1.2em 0 0;
+  visibility: hidden;
+}
+
+div#sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline;
+  margin: 0;
+}
+
+div#sidebar ul li {
+  margin: 0 0 .06em 0;
+}
+
+div#sidebar ul li a {
+  font-family: sans-serif, Arial, Helvetica;
+  color: maroon;
+  font-size: 1.2em;
+  font-weight: 300;
+  display: block;
+  border-radius: 3%;
+  text-decoration: none;
+  padding: .35em;
+  background-color: rgb(255, 230, 153);
+  opacity: .85;
+}
+
+div#sidebar ul li a:hover {
+  font-family: sans-serif, Arial, Helvetica;
+  color: lightyellow;
+  background: brown;
+  opacity: .95;
+  border-radius: 3%;
+  font-weight: 300;
+  display: block;
+  text-decoration: none;
+  padding: .35em;
+}
+
+div#sidebar button {
+  background-image: radial-gradient(rgb(245, 145, 122), maroon);
+  width: 5%;
+  min-width: 50px;
+  max-width: 53px;
+  z-index: 2;
+  position: fixed;
+  top: 72px;
+  left: 0;
+  margin: .1em .3em;
+  border: none;
+  border-radius: 50%;
+  padding: 1.3em 0;
+  visibility: visible;
+  color: black;
+  cursor: pointer;
+}
+
+div#sidebar:hover {
+  
+  top: 60px;
+  visibility: visible;
+  
+}
+
+
+div#sidebar button:hover {
+  transform: rotate(-30deg);
+}
+
+div#content {
+  clear: both;
+  width: 64%;
+  min-width: 400px;
+  min-height: 460px;
+  max-height: 40em;
+  background-color: rgb(255,200,150);
+  overflow: scroll;
+  text-align: justify;
+  border: 2px solid maroon;
+  margin: -.5em auto .5em auto; 
+  padding: .8em;
+}
+
+.no-wrap {
+  clear: both;
+}
+
+div#footer {
+  position: fixed;
+  background-color: #b7d7e8;
+  bottom: 0;
+  margin-left: -6px;
+}
+
+div#invisibleFooter{
+  visibility: hidden;
+}
+
+div#footer ul, div#invisibleFooter ul {
+  font-family: sans-serif, "comic sans ms";
+  list-style-type: none;
+  font-size: .7em;
+  margin: auto;
+ 
+}
+
+div#footer ul li, div#invisibleFooter ul li {
+  display: inline;
+  width: 30%;
+  float: left;
+  text-align: center;
+   
+}
+
+div#footer ul li a, div#invisibleFooter ul li a {
+  display: inline-block;
+  padding: .2em;
+  text-decoration: none;
+  margin: 0;
+}
+div#footer ul li a:hover {
+  display: inline-block;
+  padding: .1em;
+  text-decoration: underline;
+  font-size: 1.03em;
+  margin: 0;
+}
+
+div#media fieldset {
+  position: fixed;
+  bottom: 1.5em;
+  right: -362px;
+  max-height: 100%;
+  padding: 0.2em 0;
+  background-color: black; 
+}
+
+div#media fieldset::before {
+  content: 'video';
+  color: maroon;
+  position: absolute;
+  transform: rotate(-90deg);
+  font-family: 'helvetica';
+  font-size: 1.5em;
+  left: -38px;
+  bottom: 43%;
+}
+
+#media fieldset:hover {
+  right: -2px;
+}
+
+div#media audio {
+  position: fixed;
+  top: 1em;
+  left: 0.em;
+  z-index: 3;
+  clear: both;
+  display: block;
+  max-width: 100%;
+  
+}
+  </style>
+</head>
+
+<body>
+<div id="header">
+  <h2><a href="http://codepen.io/KoleT/full/eZoMBG/">My first website</a></h2>
+</div>
+
+<div id="invisibleHeader">
+  <h2><a href="http://codepen.io/KoleT/full/eZoMBG/">My first website</a></h2>
+</div>
+
+<div><img src="http://cs617519.vk.me/v617519318/13cc7/fNUG4z8NkHg.jpg" alt="my picture" width="610" class="additionalBackground"/></div>
+
+<div id="navBar">
+  <ul>
+    <li><a href="#" id="start">Start</a></li>
+     <li>>></li>
+  </ul>
+</div>
+   
+<!--<div id="menu">
+  <button class="with-delay">Menu</button>
+</div>-->
+
+<div id="sidebar" class="with-delay">
+  <ul>
+    <li><a href="http://codepen.io/KoleT/full/pyMMaP/">About us</a></li>
+    <li><a href="http://codepen.io/KoleT/full/XdvvLP/">Recent projects</a></li>
+    <li><a href="http://codepen.io/KoleT/full/XdvvvP/">Our team</a></li>
+    <li><a href="http://codepen.io/KoleT/full/NrKKWj/">Career</a></li>
+    <li><a href="http://codepen.io/KoleT/full/XKrrbx/">FAQ</a></li>
+  </ul>
+  <button class="with-delay">Menu</button>
+</div>
+
+
+<div id="content">
+  <p>JavaScript (/ˈdʒɑːvəˌskrɪpt/[5]) is a high-level, dynamic, untyped, and interpreted programming language.[6] It has been standardized in the ECMAScript language specification.[7] Alongside HTML and CSS, it is one of the three core technologies of World Wide Web content production; the majority of websites employ it and it is supported by all modern Web browsers without plug-ins.[6] JavaScript is prototype-based with first-class functions, making it a multi-paradigm language, supporting object-oriented,[8] imperative, and functional programming styles.[6] It has an API for working with text, arrays, dates and regular expressions, but does not include any I/O, such as networking, storage, or graphics facilities, relying for these upon the host environment in which it is embedded.[7]
+  </p>
+  <p>
+Despite some naming, syntactic, and standard library similarities, JavaScript and Java are otherwise unrelated and have very different semantics. The syntax of JavaScript is actually derived from C, while the semantics and design are influenced by the Self and Scheme programming languages.[9]
+  </p>
+JavaScript is also used in environments that are not Web-based, such as PDF documents, site-specific browsers, and desktop widgets. Newer and faster JavaScript virtual machines (VMs) and platforms built upon them have also increased the popularity of JavaScript for server-side Web applications. On the client side, JavaScript has been traditionally implemented as an interpreted language, but more recent browsers perform just-in-time compilation. It is also used in game development, the creation of desktop and mobile applications, and server-side network programming with runtime environments such as Node.js.</p>
+<p>JavaScript was originally developed in 10 days in May 1995 by Brendan Eich, while he was working for Netscape Communications Corporation. Indeed, while competing with Microsoft for user adoption of Web technologies and platforms, Netscape considered their client-server offering a distributed OS with a portable version of Sun Microsystems's Java providing an environment in which applets could be run.[citation needed] Because Java was a competitor of C++ and aimed at professional programmers, Netscape also wanted a lightweight interpreted language that would complement Java by appealing to nonprofessional programmers, like Microsoft's Visual Basic (see JavaScript and Java).[10]</p>
+<p>
+Although it was developed under the name Mocha, the language was officially called LiveScript when it first shipped in beta releases of Netscape Navigator 2.0 in September 1995, but it was renamed JavaScript[11] when it was deployed in the Netscape browser version 2.0B3.[12]</p>
+<p>
+The change of name from LiveScript to JavaScript roughly coincided with Netscape adding support for Java technology in its Netscape Navigator Web browser. The final choice of name caused confusion, giving the impression that the language was a spin-off of the Java programming language, and the choice has been characterized as a marketing ploy by Netscape to give JavaScript the cachet of what was then the hot new Web programming language.[13][14]</p>
+<p>
+There is a common misconception that the JavaScript language was influenced by an earlier Web page scripting language developed by Nombas named C-- (not to be confused with the later C-- created in 1997).[15][16][17] Brendan Eich, however, had never heard of C-- before he created LiveScript[18]. Nombas did pitch their embedded Web page scripting to Netscape, though Web page scripting was not a new concept, as shown by ViolaWWW.[19] Nombas later switched to offering JavaScript instead of C-- in their ScriptEase product and was part of the TC39 group that standardized ECMAScript.</p>
+</div>
+
+<div id="media">
+  <fieldset class="with-delay">
+  <iframe id="ytplayer" type="text/html" width="360" height="202"
+src="https://www.youtube.com/embed/ndBwIFmOjzw?modestbranding=1&showinfo=0&color=white"
+frameborder="0" allowfullscreen></iframe>
+  </fieldset>
+       
+  <audio controls>
+  <source src="http://datashat.net/music_for_programming_26-abstraction.mp3">
+    <p>That browser doesn't support audio</p>
+  </audio>
+</div>
+
+<form id="formForLog" action="#" method="post" class="with-delay">
+  <fieldset id="login">
+    
+  <label>name:<br>
+    <input type="text" size="20" maxlength="25" name="userName">
+    </label>
+  <label>password:<br>
+      <input type="password" name="psw" size="20" maxlength="30">
+      <input type="submit" value="submit"> 
+   </label> 
+   </fieldset>
+  </form>
+ 
+<div id="invisibleFooter">
+  <ul>
+    <li><a href="#">Contacts</a></li>
+    <li><a href="#">Developers</a></li>
+    <li><a href="#">New features</a></li>
+  </ul>
+</div>
+<div id="footer">
+  <ul>
+    <li><a href="#">Contacts</a></li>
+    <li><a href="#">Developers</a></li>
+    <li><a href="#">New features</a></li>
+  </ul>
+</div>
+
+
+
+</body>
+</html>
