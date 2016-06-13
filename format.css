@@ -8,23 +8,12 @@ body {
   opacity: .7;
   z-index: -1;
 }
-/*.invisibleSidebar {
-  min-width: 230px;
-  max-width: 230px;
-  min-height: 150px;
-  float: left;
-  margin: -8px;
-  
-}*/
+
 div#header, div#navBar, div#footer {
   width: 100%;
   z-index: 2;
 }
-/*div#invisibleHeader {
-  visibility: hidden;
-  margin-left: .05em;
-  border: 2px solid green;
-}*/
+
 div#header h2 a {
   width: 100%;
   display: block;
@@ -56,6 +45,7 @@ div#navBar {
   right: 0;
   margin: .1em 0;
   background-color: #92a8d1;
+  min-width: 200px;
 }
 div#navBar ul {
   padding: 0;
