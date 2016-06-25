@@ -1,0 +1,12 @@
+td {
+  min-width: 80px;
+  text-align: center;
+}
+
+tr:nth-child(2n + 2) {
+  background: #ddebf7;
+}
+
+td:nth-child(2n + 3) {
+  background: #f2f2de;
+}
