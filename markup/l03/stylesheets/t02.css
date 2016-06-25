@@ -1,0 +1,7 @@
+header + p {
+  text-transform: uppercase;
+}
+
+article > :last-child {
+  color: #999;
+}
