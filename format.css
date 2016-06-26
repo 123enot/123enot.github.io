@@ -20,6 +20,7 @@ div#header h2 a {
   text-decoration: none;
   color: lightyellow;
   margin-top: -.5em;
+  vertical-align: top;
 }
 div#header {
   min-height: 50px;
@@ -41,7 +42,7 @@ div#navBar {
   top: 48px;
   left: .05em;
   right: 0;
-  margin: .1em 0;
+  margin: 0;
   background-color: #92a8d1;
   min-width: 200px;
 }
