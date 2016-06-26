@@ -2,6 +2,7 @@ body {
    background-color: #92a8d1;
    
 }
+
 .additionalBackground {
   position: fixed;
   top: 70px; left: -45px;
@@ -17,20 +18,29 @@ body {
   margin: -8px;
 }
 
-
 div#header, div#navBar, div#footer {
   width: 100%;
   z-index: 2;
 }
 
+div#invisibleHeader {
+  visibility: hidden;
+  padding: .08em;
+  margin-left: .05em;
+  border: 2px solid green;
+}
+
 div#header h2 a {
   width: 100%;
-  display: block;
+  height: 100%;
+  display: inline-block;
   text-decoration: none;
   color: lightyellow;
-  margin-top: -.5em;
+  margin-top: -.5em;;
   vertical-align: top;
+  
 }
+
 div#header {
   min-height: 50px;
   max-height: 50px;
@@ -45,23 +55,24 @@ div#header {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 div#navBar {
-  /*clear: both;*/
+  clear: both;
   position: fixed;
   top: 48px;
   left: .05em;
   right: 0;
   margin: 0;
   background-color: #92a8d1;
-  min-width: 200px;
 }
+
 div#navBar ul {
   padding: 0;
   list-style-type: none;
   margin: 0 0 0 20em;
   display: inline-block;
-  min-width: 100px;
   overflow: hidden;
+  min-width: 100px;
 }
 
 div#navBar ul li{
@@ -69,6 +80,7 @@ div#navBar ul li{
   display: inline;
   font-size: .8em;
 }
+
 
 div#navBar li a {
   color: maroon;
@@ -84,6 +96,7 @@ div#navBar a:hover {
   display: inline-block;
   background-color: brown;
 }
+
 form#formForLog {
   min-width: 50px;
   max-width: 203px;
