@@ -218,7 +218,7 @@ div#sidebar button:hover {
 div#content {
   position: fixed;
   left: 200px;
-  top: 71px;
+  
   width: 64%;
   min-width: 400px;
   min-height: 460px;
@@ -227,7 +227,7 @@ div#content {
   overflow: scroll;
   text-align: justify;
   border: 2px solid maroon;
-  margin: 0 auto .5em 30px; 
+  margin: -.5em auto .5em 30px; 
   padding: .8em;
 }
 .no-wrap {
