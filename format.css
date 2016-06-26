@@ -19,9 +19,7 @@ div#header h2 a {
   display: block;
   text-decoration: none;
   color: lightyellow;
-  margin: -.5em 0 0 0;
-  padding: .1em;
-  
+  margin-top: -.5em;
 }
 div#header {
   min-height: 50px;
