@@ -52,6 +52,8 @@ div#navBar ul {
   list-style-type: none;
   margin: 0 0 0 20em;
   display: inline-block;
+  min-width: 100px;
+  overflow: hidden;
 }
 div#navBar ul li{
   color: maroon;
