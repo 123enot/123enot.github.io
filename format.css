@@ -54,20 +54,20 @@ div#navBar ul {
   min-width: 100px;
   overflow: hidden;
 }
+
 div#navBar ul li{
   color: maroon;
   display: inline;
   font-size: .8em;
-  padding: .1em; 
 }
+
 div#navBar li a {
   color: maroon;
   text-decoration: none;
   padding: .1em .2em;
-  margin-bottom: .1em;
   display: inline-block;
-   
 }
+
 div#navBar a:hover {
   color: white;
   text-decoration: none;
