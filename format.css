@@ -25,7 +25,7 @@ div#header, div#navBar, div#footer {
 
 div#invisibleHeader {
   visibility: hidden;
-  padding: .08em;
+  padding: .09em;
   margin-left: .05em;
   border: 2px solid green;
 }
