@@ -12,7 +12,9 @@ nav {
 
 nav ul {
   list-style-type: none;
+  
   width: 900px;
+  margin: 0 auto;
   
   background: mediumorchid;
 }
