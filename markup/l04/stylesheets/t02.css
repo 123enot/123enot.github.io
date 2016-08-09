@@ -5,6 +5,7 @@ body {
 
 nav {
   text-transform: uppercase;
+  text-align: center;
   
   width: 100%;
   min-width: 900px;
