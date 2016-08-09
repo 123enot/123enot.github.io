@@ -26,6 +26,7 @@ nav ul li {
 
 nav ul li:last-of-type {
   float: right;
+  margin-right: 40px;
 }
 
 nav ul li a {
