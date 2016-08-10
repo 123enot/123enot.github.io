@@ -1,6 +1,7 @@
+/* Styles go here */
 body {
   font-family: 'Economica';
-  font-weight: 700;
+  font-weight: bold;
 }
 
 nav {
@@ -41,6 +42,13 @@ nav ul li {
   background: lavender;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: .5em 1em;
+}
+
 .abs a {
   color: gray;
 }
@@ -50,27 +58,24 @@ nav ul li {
   margin-right: 40px;
 }
 
-nav ul li a {
-  display: block;
-  text-decoration: none;
+nav ul li {
+  display: inline-block;
   color: white;
-  
+}
+
+[class='inner'] {
   padding: .5em 1em;
 }
 
-.main li a:hover {
+.main li:hover, a:hover {
   color: gray;
   background: lavender;
 }
 
-.main :hover ~ .abs {
+.main li:hover .abs {
   visibility: visible;
 }
 
-nav:hover .abs:hover {
-  visibility: visible;
-}
-
-nav:hover .abs a:hover {
+.abs a:hover {
   color: lightsteelblue;
 }
