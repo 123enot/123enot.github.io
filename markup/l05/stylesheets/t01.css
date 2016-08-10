@@ -1,0 +1,76 @@
+body {
+  font-family: 'Economica';
+  font-weight: 700;
+}
+
+nav {
+  text-transform: uppercase;
+  text-align: center;
+  
+  width: 100%;
+  min-width: 900px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: inline-block;
+  
+  width: 900px;
+  margin: 0;
+  background: cornflowerblue;
+}
+
+nav ul li {
+  float: left;
+}
+
+.main {
+  position: relative;
+}
+
+.abs {
+  text-transform: capitalize;
+  
+  position: absolute;
+  visibility: hidden;
+  
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  
+  background: lavender;
+}
+
+.abs a {
+  color: gray;
+}
+
+.main > li:last-of-type {
+  float: right;
+  margin-right: 40px;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  
+  padding: .5em 1em;
+}
+
+.main li a:hover {
+  color: gray;
+  background: lavender;
+}
+
+.main :hover ~ .abs {
+  visibility: visible;
+}
+
+nav:hover .abs:hover {
+  visibility: visible;
+}
+
+nav:hover .abs a:hover {
+  color: lightsteelblue;
+}
