@@ -1,0 +1,54 @@
+body {
+  font-family: Verdana;
+  font-size: .8em;
+  text-transform: uppercase;
+  text-align: center;
+  
+  margin: 0;
+  padding: 0;
+}
+
+.pager {
+  display: block;
+  
+  min-width: 650px;
+  max-width: 1200px;
+  margin: 1em;
+  padding: 1em;
+}
+
+.pager a {
+  text-decoration: none;
+  
+  padding: .6em 1em;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  
+  color: darkviolet;
+}
+
+.pager a:hover {
+  color: white;
+  background: darkviolet;
+}
+
+
+.pager .notlist {
+  border: none;
+}
+
+.pager .notlist:hover {
+  color: cornflowerblue;
+  background: transparent;
+}
+
+.pager span {
+  display: inline-block;
+  vertical-align: bottom;
+  
+  margin-bottom: -.7em;
+  padding: 0 .7em;
+  
+  color: black;
+  
+}
