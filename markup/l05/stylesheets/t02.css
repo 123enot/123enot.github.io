@@ -93,7 +93,7 @@
  }
  
  .offer ul li:before {
-   content: url( 'http://123enot.github.io/markup/l05/images/checked.png' );
+   content: url( '../images/checked.png' );
    margin-right: .8em;
  }
  
