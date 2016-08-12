@@ -30,7 +30,7 @@
 
 .ultimate {
   position: absolute;
-  left: 557px;
+  left: 555px;
   z-index: -1;
 }
 
@@ -40,12 +40,12 @@
 
 .best_offer {
   position: absolute;
-  left: 279px;
+  left: 280px;
 }
 
 .standard {
   position: absolute;
-  left: 7px;
+  left: 5px;
   z-index: -1;
 }
 
