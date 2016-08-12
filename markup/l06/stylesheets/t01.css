@@ -46,7 +46,7 @@
   
   width: 280px;
   
-  margin: calc(1.15em + 4px) auto 0;
+  margin: calc(.65em + 4px) auto 0;
   border: 1px solid lavender;
   background: white;
   border-radius: 5px;
@@ -173,7 +173,7 @@
 
 .best_title {
   padding: 1.2em;
-  
+  padding-top: .85em;
   border-radius: 0;
   background: darkorange;
 }
