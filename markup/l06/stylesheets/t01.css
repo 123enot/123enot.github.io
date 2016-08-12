@@ -3,10 +3,23 @@
 }
 
 .main {
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
     position: relative;
   
     width: 840px;
     margin: 0 auto;
+}
+
+.description {
+  font-size: 1.75em;
+  text-align: center;
+  
+  padding-bottom: 1.5em;
+}
+
+.header, .description, .price {
+  color: rgb(80,100,120);
 }
 
 /*.main:after {
@@ -17,7 +30,7 @@
 
 .ultimate {
   position: absolute;
-  left: 555px;
+  left: 557px;
   z-index: -1;
 }
 
@@ -27,24 +40,22 @@
 
 .best_offer {
   position: absolute;
-  left: 280px;
+  left: 279px;
 }
 
 .standard {
   position: absolute;
-  left: 5px;
+  left: 7px;
   z-index: -1;
 }
 
 
-.offer .title, .header, .button {
+.main, .offer .title, .header, .button {
   text-transform: uppercase;
 }
 
 .offer {
-  font-family: 'Trebuchet MS';
-  
-  width: 280px;
+  min-width: 280px;
   
   margin: calc(.65em + 4px) auto 0;
   border: 1px solid lavender;
@@ -55,7 +66,6 @@
 
 .title {
   font-size: 1.35em;
-  font-weight: bold;
   
   text-align: center;
   
@@ -70,14 +80,11 @@
 
 .header {
   font-size: 1.4em;
-  font-weight: normal;
   letter-spacing: .02em;
   
   text-align: center;
   padding-top: 1.05em;
   padding-bottom: .4em;
-  
-  color: rgb(70,70,70);
 }
 
 .price {
@@ -85,11 +92,8 @@
  
   font-family: 'Trebuchet MS';
   font-size: 4.2em;
-  font-weight: bold;
   
   padding-left: 1.2em;
-  
-  color: rgb(70,70,70);
 }
 
 .price:before {
@@ -120,6 +124,8 @@
 }
 
 .offer ul li {
+  font-size: .8em;
+  
   margin-top: 1px;
   padding-top: .25em;
   padding-bottom: .25em;
@@ -174,6 +180,7 @@
 .best_title {
   padding: 1.2em;
   padding-top: .82em;
+  
   border-radius: 0;
   background: darkorange;
 }
