@@ -21,6 +21,10 @@
   z-index: -1;
 }
 
+.ultimate .title_bg {
+  background: lightseagreen;
+}
+
 .best_offer {
   position: absolute;
   left: 280px;
