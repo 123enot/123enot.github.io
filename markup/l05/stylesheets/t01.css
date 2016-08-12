@@ -30,7 +30,7 @@ nav ul li {
 }
 
 .abs {
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   font-weight: normal;
   font-size: 1em;
   text-transform: capitalize;
