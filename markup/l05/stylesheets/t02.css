@@ -1,12 +1,7 @@
-/*@media (max-width: 480px) {
+@media (max-width: 480px) {
   body {
     max-width: 300px;
   }
-}
-*/
-
-html {
-  width: 300px;
 }
 
 .offer .title, .header {
