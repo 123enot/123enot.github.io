@@ -1,3 +1,9 @@
+@media (max-width: 480px) {
+  body {
+    max-width: 480px;
+  }
+}
+
 .offer .title, .header {
   text-transform: uppercase;
 }
