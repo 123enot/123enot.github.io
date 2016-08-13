@@ -1,4 +1,7 @@
-/* Styles go here */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Economica';
   font-weight: bold;
@@ -18,14 +21,20 @@ nav {
 
 nav ul {
   list-style-type: none;
-  display: inline-block;
   
   width: 900px;
   margin: 0;
 }
 
+nav ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 nav ul li {
   float: left;
+  color: white;
 }
 
 .main {
@@ -53,17 +62,10 @@ a {
   color: white;
   display: block;
   padding: .5em 1em;
-  margin: 0;
 }
 
 .abs a {
   color: gray;
-}
-
-nav ul li {
-  -display: inline-block;
-  color: white;
-  border: 1px solid red;
 }
 
 [class='inner'] {
