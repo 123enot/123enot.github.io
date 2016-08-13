@@ -2,6 +2,9 @@
 body {
   font-family: 'Economica';
   font-weight: bold;
+  
+  margin: 0;
+  padding: 0;
 }
 
 nav {
@@ -10,6 +13,8 @@ nav {
   
   width: 100%;
   min-width: 900px;
+  
+  background: cornflowerblue;
 }
 
 nav ul {
@@ -18,7 +23,6 @@ nav ul {
   
   width: 900px;
   margin: 0;
-  background: cornflowerblue;
 }
 
 nav ul li {
