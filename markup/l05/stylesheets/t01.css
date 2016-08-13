@@ -53,6 +53,7 @@ a {
   color: white;
   display: block;
   padding: .5em 1em;
+  margin: 0;
 }
 
 .abs a {
