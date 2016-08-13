@@ -209,8 +209,9 @@
 }
 
 @media (min-width:481px) and (max-width:768px) {
-  .basic, .description {
+  .main, .basic, .description {
     width: 586px;
+    max-width: 590px;
     margin: 0 auto;
     border: 1px solid transparent;
   }
@@ -232,12 +233,16 @@
   .ultimate {
     margin: 0 auto;
   }
+  
+  .description {
+    font-size: 1.5em;
+    padding-bottom: .5em;
+  }
 }
 
 @media (max-width:480px) {
-  .basic, .description {
-    min-width: 300px;
-    max-width: 480px;
+  .main, .basic, .description {
+    max-width: 300px;
     margin: 0 auto;
   }
   
