@@ -207,3 +207,53 @@
    margin-bottom: 30px;
    box-shadow: 0 1px 0 rgb(200,70,50);
 }
+
+@media (min-width:481px) and (max-width:768px) {
+  .basic, .description {
+    width: 586px;
+    margin: 0 auto;
+    border: 1px solid transparent;
+  }
+  
+  .offer {
+    position: static;
+    max-width: 290px;
+  }
+  
+  .best_offer {
+    float: right;
+    margin-top: 0;
+  }
+  
+  .standard {
+    margin: 17px 0;
+  }
+  
+  .ultimate {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:480px) {
+  .basic, .description {
+    min-width: 300px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  
+  .offer {
+    position: static;
+    
+    max-width: 290px;
+    margin: 1em auto;
+  }
+  
+  .best_offer {
+    max-width: 296px;
+  }
+  
+  .description {
+    font-size: 1.5em;
+    padding-bottom: .5em;
+  }
+}
