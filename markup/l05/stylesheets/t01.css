@@ -57,6 +57,16 @@ nav ul li {
   background: lavender;
 }
 
+.abs ul {
+  padding: 0;
+}
+
+.abs li {
+  float: none;
+  display: inline-block;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
   color: white;
