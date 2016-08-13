@@ -13,6 +13,7 @@ nav {
   text-transform: uppercase;
   text-align: center;
   
+  position: relative;
   width: 100%;
   min-width: 900px;
   
@@ -22,8 +23,11 @@ nav {
 nav ul {
   list-style-type: none;
   
-  width: 900px;
   margin: 0 auto;
+}
+
+nav ul:not(.abs) {
+  width: 900px;
 }
 
 nav ul:after {
@@ -35,10 +39,6 @@ nav ul:after {
 nav ul li {
   float: left;
   color: white;
-}
-
-.main {
-  position: relative;
 }
 
 .abs {
