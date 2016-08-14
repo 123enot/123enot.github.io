@@ -4,17 +4,16 @@
 
 body {
   margin: 0;
-  padding: 0;
 }
 
 div.testimonials {
   min-width: 1070px;
   background-image: url( https://123enot.github.io/markup/l06/images/bg_2.png );
-  background-position: 50% 50%;
 }
 
 div.background {
   background-image: url( https://123enot.github.io/markup/l06/images/bg_small.png );
+  border: 1px solid transparent;
 }
 
 div.all_clients {
