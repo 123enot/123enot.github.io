@@ -1,0 +1,133 @@
+* {
+  box-sizing: box-border;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div.testimonials {
+  min-width: 1070px;
+  background-image: url( https://123enot.github.io/markup/l06/images/bg_2.png );
+  background-position: 50% 50%;
+}
+
+div.background {
+  background-image: url( https://123enot.github.io/markup/l06/images/bg_small.png );
+}
+
+div.all_clients {
+  min-width: 1068px;
+  max-width: 1068px;
+  margin: 0 auto;
+}
+
+div.client {
+  float: left;
+  background: transparent;
+  
+  max-width: 490px;
+  
+  
+  margin: 0;
+  margin-bottom: 77px;
+  padding: 0 22px;
+}
+
+div.all_clients::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+div.feedback {
+  position: relative;
+  width: 364px;
+  
+  margin: 0 0 0 125px;
+  
+  border: 1px solid lavender;
+  -webkit-box-shadow: 1px 1px lavender;
+     -moz-box-shadow: 1px 1px lavender;
+          box-shadow: 1px 1px lavender;
+  background: rgb(247,247,247);
+}
+
+.feedback p {
+  margin: 0 14px;
+  padding: 12px 0 14px 0;
+}
+
+.feedback .name {
+  padding: 14px 0 9px 0;
+  border-bottom: 1px dashed lightgray;
+}
+
+div.triangle {
+  box-sizing: content-box;
+  position: absolute;
+  left: -30px;
+  top: 40px;
+  
+  width 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-right: 15px solid lavender;
+}
+
+.feedback::before {
+  content: '';
+  box-sizing: content-box;
+  position: absolute;
+  left: -26px;
+  top: 42px;
+  
+  width: 0;
+  height: 0;
+  border: 13px solid transparent;
+  border-right: 13px solid rgb(247,247,247);
+  z-index: 2;
+}
+
+.client div.wrapper {
+  width: 100px;
+  height: 98px;
+  float: left;
+  
+  overflow: hidden;
+}
+
+h1 {
+ font-size: 38px;
+ font-weight: normal;
+ letter-spacing: 1px;
+ text-transform: uppercase; 
+ text-align: center;
+ 
+ padding: 50px;
+}
+
+h1, .name {
+ font-family: 'Trebuchet MS', sans-serif;
+ color: cornflowerblue;
+}
+
+.feedback:not(.name) {
+  color: dimgray;
+}
+
+h1 span {
+  color: orange;
+}
+
+.name {
+  font-size: 14px;
+  font-style: italic;
+  
+}
+
+.name span {
+  float: right;
+  padding-right: 4px;
+}
