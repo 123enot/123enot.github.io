@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    position: relative;
+  
+    width: 874px;
+    margin: 0 auto;
+}
+
+.description {
+  font-size: 1.8em;
+  letter-spacing: .007em;
+  text-align: center;
+  
+  padding-bottom: 1.9em;
+}
+
+.header, .description, .price {
+  color: rgb(80,100,120);
+}
+
+/*.main:after {
+  content: '';
+  display: table;
+  clear: both;
+}*/
+
+.ultimate {
+  position: absolute;
+  left: calc(296px + (290px - 4px) - 4px);
+  z-index: -1;
+}
+
+.ultimate .title_bg {
+  background: lightseagreen;
+}
+
+.best_offer {
+  position: absolute;
+  left: 289px;
+}
+
+.standard {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+
+.main, .offer .title, .header, .button {
+  text-transform: uppercase;
+}
+
+.offer {
+  min-width: 290px;
+  
+  margin: 17px 0;
+  border: 1px solid lavender;
+  background: white;
+  border-radius: 5px;
+}
+
+
+.title {
+  font-size: 1.35em;
+  
+  text-align: center;
+  
+  padding-top: 25px;
+  padding-bottom: 20px;
+  
+  color: white;
+  border-radius: 5px 5px 0 0;
+  background: deepskyblue;
+}
+
+
+.header {
+  font-size: 1.5em;
+  
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 5px;
+}
+
+.price {
+  position: relative;
+  
+  font-family: 'Trebuchet MS';
+  font-size: 70px;
+  
+  padding-left: 1.2em;
+}
+
+.price:before {
+  content: '$';
+  font-size: 20px;
+  
+  position: absolute;
+  top: 13%;
+  left: 24%;
+}
+
+.price:after {
+  content: 'Monthly';  
+  font-size: 17px;
+  text-transform: capitalize;
+  
+  position: absolute;
+  top: 70%;
+  left: 56%;
+}
+
+.offer ul {
+  list-style: none;
+  
+  margin: 19px;
+  padding: 0;
+  
+  color: rgba(150,150,150,1);
+}
+
+.offer ul li {
+  font-size: .95em;
+  text-transform: none;
+  
+  margin-top: 1px;
+  padding-top: .35em;
+  padding-bottom: .35em;
+  padding-left: 2.5em;
+}
+
+.offer ul li:nth-child(odd) {
+  background: rgba(235,245,255,1);
+ }
+ 
+ .offer ul li:nth-child(even) {
+  background: rgba(245,245,245,1);
+ }
+ 
+ .offer ul li:before {
+   content: url( 'http://123enot.github.io/markup/l05/images/checked.png' );
+   margin-right: .6em;
+ }
+ 
+ .button {
+   cursor: pointer;
+   font-weight: bold;
+   text-align: center;
+   
+   min-width: 252px;
+   min-height: 37px;
+   margin: 20px;
+   padding: .5em 0;
+   
+   color: white;
+   border-radius: 5px;
+   box-shadow: 0 3px 0 rgb(24,57,154);
+   background: steelblue;
+ }
+ 
+ .button:active {
+   margin-top: 23px;
+   margin-bottom: 17px;
+   box-shadow: 0 1px 0 rgb(24,57,154);
+ }
+ 
+ .button::-moz-selection {
+   background-color: transparent;
+ }
+
+/* Design for BEST VALUE */
+
+.best_offer {
+  max-width: 296px;
+  margin-top: 0;
+}
+
+.best_border {
+  border: 4px solid darkorange;
+  box-shadow: 0 0 8px 0 lightblue;
+}
+
+.best_title {
+  
+  padding-top: 31px;
+  padding-bottom: 28px;
+  
+  border-radius: 0;
+  background: darkorange;
+}
+
+.best_button {
+   max-width: 251px;
+   
+   margin-bottom: 33px;
+   box-shadow: 0 3px 0 rgb(200,70,50);
+   background: darkorange;
+}
+  
+.best_button:active {
+   margin-top: 23px;
+   margin-bottom: 30px;
+   box-shadow: 0 1px 0 rgb(200,70,50);
+}
+
+@media (min-width:481px) and (max-width:768px) {
+  .main, .basic, .description {
+    width: 586px;
+    max-width: 590px;
+    margin: 0 auto;
+    border: 1px solid transparent;
+  }
+  
+  .offer {
+    position: static;
+    max-width: 290px;
+  }
+  
+  .best_offer {
+    float: right;
+    margin-top: 0;
+  }
+  
+  .standard {
+    margin: 17px 0;
+  }
+  
+  .ultimate {
+    margin: 0 auto;
+  }
+  
+  .description {
+    font-size: 1.5em;
+    padding-bottom: .5em;
+  }
+}
+
+@media (max-width:480px) {
+  .main, .basic, .description {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .offer {
+    position: static;
+    
+    max-width: 290px;
+    margin: 1em auto;
+  }
+  
+  .best_offer {
+    max-width: 296px;
+  }
+  
+  .description {
+    font-size: 1.5em;
+    padding-bottom: .5em;
+  }
+}

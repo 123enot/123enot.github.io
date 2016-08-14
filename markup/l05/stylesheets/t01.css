@@ -1,32 +1,44 @@
-/* Styles go here */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Economica';
   font-weight: bold;
+  
+  margin: 0;
 }
 
 nav {
   text-transform: uppercase;
   text-align: center;
   
+  position: relative;
   width: 100%;
   min-width: 900px;
+  
+  background: cornflowerblue;
 }
 
 nav ul {
   list-style-type: none;
-  display: inline-block;
   
+  margin: 0 auto;
+}
+
+nav ul:not(.abs) {
   width: 900px;
-  margin: 0;
-  background: cornflowerblue;
+}
+
+nav ul:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 nav ul li {
   float: left;
-}
-
-.main {
-  position: relative;
+  color: white;
 }
 
 .abs {
@@ -45,6 +57,16 @@ nav ul li {
   background: lavender;
 }
 
+.abs ul {
+  padding: 0;
+}
+
+.abs li {
+  float: none;
+  display: inline-block;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -54,11 +76,6 @@ a {
 
 .abs a {
   color: gray;
-}
-
-nav ul li {
-  display: inline-block;
-  color: white;
 }
 
 [class='inner'] {
