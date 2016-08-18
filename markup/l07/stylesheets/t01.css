@@ -1,0 +1,125 @@
+body {
+    max-width: 430px;
+    margin: 0 auto;
+
+    -counter-reset: sivtsev 0;
+}
+
+.sivtsev p {
+    font-family: Arial, sans-serif;
+
+    min-width: 420px;
+    max-width: 420px;
+    margin-top: 0;
+    padding: 0;
+
+    text-align: justify;
+    text-align-last: center;
+
+    color: rgba(90,90,90,.1);
+    text-shadow: 2px 2px 4px rgba(90,90,90,1), -2px -2px 4px rgba(90,90,90,1);
+}
+
+
+.sight01 {
+    font-size: 150px;
+
+    margin-bottom: 90px;
+
+    word-spacing: 130px;
+}
+
+.sight02 {
+    font-size: calc( 200px / 2 );
+
+    margin-bottom: 80px;
+
+    word-spacing: calc(50px / 2 * 2.7);
+}
+
+.sight03 {
+    font-size: calc( 200px / 3);
+
+    margin-bottom: calc(80px * 16.67 / 25);
+
+    word-spacing: calc(50px / 3 * 2.6);
+}
+
+.sight04 {
+    font-size: calc( 200px / 4);
+
+    margin-bottom: calc(80px * 12.5 / 16.67);
+
+    word-spacing: calc(50px / 4 * 3.3);
+}
+
+.sight05 {
+    font-size: calc( 200px / 5);
+
+    margin-bottom: calc(80px * 10 / 12.5);
+
+    word-spacing: calc(50px / 4 * 3.3 * 1.25);
+}
+
+.sight06 {
+    font-size: calc( 200px / 6);
+
+    margin-bottom: calc(80px * 8.33 / 10);
+
+    word-spacing: calc(50px / 5 * 4.2);
+}
+
+.sight07 {
+    font-size: calc( 200px / 7);
+
+    margin-bottom: calc(80px * 7.14 / 8.33);
+
+    word-spacing: calc(50px / 5 * 4.6);
+}
+
+.sight08 {
+    font-size: calc( 200px / 8);
+
+    margin-bottom: calc(80px * 6.25 / 7.14);
+
+    word-spacing: calc(50px / 6 * 4.5);
+}
+
+.sight09 {
+    font-size: calc( 200px / 9);
+
+    margin-bottom: calc(80px * 5.55 / 6.25);
+
+    word-spacing: calc(50px / 6 * 4.9);
+}
+
+.sight10
+{
+    font-size: calc( 200px / 10);
+
+    word-spacing: calc(50px / 7 * 4.75);
+}
+
+.uline {
+    max-width: 420px;
+    margin-top: calc(80px * 5 / 5.55 / 2);
+    margin-bottom: calc(80px * 5 / 5.55 / 2);
+
+    border-bottom: 1px solid red;
+}
+
+.sight15 {
+    font-size: calc( 200px / 15);
+
+    margin-bottom: calc(80px * 3.33 / 5);
+
+    word-spacing: calc(50px / 7 * 5.85);
+}
+
+.sight20 {
+    font-size: calc( 200px / 20);
+
+    margin-bottom: calc(80px * 2.5 / 3.33);
+
+    word-spacing: calc(50px / 7 * 6.25);
+}
