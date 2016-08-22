@@ -16,7 +16,7 @@ body {
     font-weight: bold;
 
     min-width: 1023px;
-    max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
 
     text-transform: uppercase;
@@ -98,7 +98,9 @@ nav a:hover {
 /* Banner styling */
 
 .banner {
-    background: url(../images/banner_bg.png) 0 -100px;
+    background: url(../images/banner_bg.png) no-repeat center center;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
 }
 
 .banner .inner {
