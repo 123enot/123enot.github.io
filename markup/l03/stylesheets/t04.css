@@ -1,4 +1,4 @@
-a[href^="http"] {
+a[href*="://"] {
   color: #f70;
 }
 
