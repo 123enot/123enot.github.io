@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    background: linear-gradient(to bottom, brown, coral) no-repeat;
+}
+
+.arrow {
+    position: relative;
+
+    width: 80%;
+
+    margin: 5em auto;
+    padding: 5px;
+
+    background-image: linear-gradient(to bottom, gold 50%, orange);
+}
+
+
+
+input[type='text'] {
+    width: calc(100% - 60px);
+}
+
+
+input[type='submit'] {
+    position: absolute;
+    right: 3px;
+}
+
+p {
+    font-size: .85em;
+
+    margin: 0;
+    padding: 2px;
+    padding-left: 0;
+}
+
+span {
+    border-bottom: 1px dotted black;
+}
+
+input[type='checkbox'] {
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.arrow:after {
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+    width: 15px;
+    height: 100%;
+
+    content: '';
+
+    background-image: linear-gradient(to bottom, gold 50%, orange);
+
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 50%);
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+}
