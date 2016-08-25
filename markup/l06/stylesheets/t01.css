@@ -2,37 +2,82 @@
   box-sizing: border-box;
 }
 
-.main {
-    font-family: 'Trebuchet MS';
-    font-weight: bold;
-    position: relative;
-  
-    width: 874px;
-    margin: 0 auto;
+.packages {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+
+  position: relative;
+
+  width: 100%;
+  min-width: 1023px;
+  margin: 0 auto;
+  padding-bottom: 70px;
 }
 
 .description {
   font-size: 1.8em;
-  letter-spacing: .007em;
+
+  padding: 1.9em 0;
+
   text-align: center;
-  
-  padding-bottom: 1.9em;
+  letter-spacing: .007em;
 }
 
-.header, .description, .price {
+.p_logo,
+.description,
+.price {
   color: rgb(80,100,120);
 }
 
-/*.main:after {
-  content: '';
-  display: table;
+.packages,
+.offer .package_title,
+.p_logo,
+.packages .button {
+  text-transform: uppercase;
+}
+
+.offer {
+  width: 290px;
+
+  border: 1px solid lavender;
+  border-radius: 5px;
+  background: white;
+}
+
+.all_offers {
+  width: calc(290px + 300px + 290px);
+  margin: 0 auto;
+}
+
+.all_offers:after {
+  display: block;
   clear: both;
-}*/
+
+  padding-bottom: 17px;
+
+  content: '';
+}
+
+.basic_offers {
+  float: left;
+
+  width: calc(290px + 300px);
+  margin: 0 0 12px;
+}
+
+.standard {
+  position: relative;
+  top: 17px;
+  left: 8px;
+
+  float: left;
+}
 
 .ultimate {
-  position: absolute;
-  left: calc(296px + (290px - 4px) - 4px);
-  z-index: -1;
+  position: relative;
+  top: 17px;
+
+  margin-left: calc(290px + 300px - 10px);
 }
 
 .ultimate .title_bg {
@@ -40,138 +85,128 @@
 }
 
 .best_offer {
-  position: absolute;
-  left: 289px;
+  position: relative;
+  z-index: 10;
+
+  float: right;
+
+  width: 300px;
 }
 
-.standard {
-  position: absolute;
-  left: 0;
-  z-index: -1;
-}
-
-
-.main, .offer .title, .header, .button {
-  text-transform: uppercase;
-}
-
-.offer {
-  min-width: 290px;
-  
-  margin: 17px 0;
-  border: 1px solid lavender;
-  background: white;
-  border-radius: 5px;
-}
-
-
-.title {
+.package_title {
   font-size: 1.35em;
-  
-  text-align: center;
-  
+
   padding-top: 25px;
   padding-bottom: 20px;
-  
+
+  text-align: center;
+
   color: white;
   border-radius: 5px 5px 0 0;
   background: deepskyblue;
 }
 
 
-.header {
+.p_logo {
   font-size: 1.5em;
-  
-  text-align: center;
+
   padding-top: 22px;
   padding-bottom: 5px;
+
+  text-align: center;
 }
 
 .price {
-  position: relative;
-  
-  font-family: 'Trebuchet MS';
+  font-family: 'Trebuchet MS', sans-serif;
   font-size: 70px;
-  
+
+  position: relative;
+
   padding-left: 1.2em;
 }
 
 .price:before {
-  content: '$';
   font-size: 20px;
-  
+
   position: absolute;
   top: 13%;
   left: 24%;
+
+  content: '$';
 }
 
 .price:after {
-  content: 'Monthly';  
   font-size: 17px;
-  text-transform: capitalize;
-  
+
   position: absolute;
   top: 70%;
   left: 56%;
+
+  content: 'Monthly';
+  text-transform: capitalize;
 }
 
 .offer ul {
-  list-style: none;
-  
   margin: 19px;
   padding: 0;
-  
+
+  list-style: none;
+
   color: rgba(150,150,150,1);
 }
 
 .offer ul li {
   font-size: .95em;
-  text-transform: none;
-  
+
   margin-top: 1px;
   padding-top: .35em;
   padding-bottom: .35em;
   padding-left: 2.5em;
+
+  text-transform: none;
 }
 
 .offer ul li:nth-child(odd) {
   background: rgba(235,245,255,1);
- }
- 
- .offer ul li:nth-child(even) {
+}
+
+.offer ul li:nth-child(even) {
   background: rgba(245,245,245,1);
- }
- 
- .offer ul li:before {
-   content: url( 'http://123enot.github.io/markup/l05/images/checked.png' );
-   margin-right: .6em;
- }
- 
- .button {
-   cursor: pointer;
-   font-weight: bold;
-   text-align: center;
-   
-   min-width: 252px;
-   min-height: 37px;
-   margin: 20px;
-   padding: .5em 0;
-   
-   color: white;
-   border-radius: 5px;
-   box-shadow: 0 3px 0 rgb(24,57,154);
-   background: steelblue;
- }
- 
- .button:active {
-   margin-top: 23px;
-   margin-bottom: 17px;
-   box-shadow: 0 1px 0 rgb(24,57,154);
- }
- 
- .button::-moz-selection {
-   background-color: transparent;
- }
+}
+
+.offer ul li:before {
+  margin-right: .6em;
+
+  content: url( 'http://123enot.github.io/markup/l05/images/checked.png' );
+}
+
+.packages .button {
+  font-weight: bold;
+
+  min-width: 252px;
+  min-height: 37px;
+  margin: 20px;
+  padding: .5em 0;
+
+  cursor: pointer;
+  text-align: center;
+
+  color: white;
+  border-radius: 5px;
+  background: steelblue;
+  box-shadow: 0 3px 0 rgb(24,57,154);
+}
+
+.packages .button:active {
+  margin-top: 23px;
+  margin-bottom: 17px;
+
+  box-shadow: 0 1px 0 rgb(24,57,154);
+}
+
+.packages .button::-moz-selection {
+  background-color: transparent;
+}
 
 /* Design for BEST VALUE */
 
@@ -186,79 +221,24 @@
 }
 
 .best_title {
-  
   padding-top: 31px;
   padding-bottom: 28px;
-  
+
   border-radius: 0;
   background: darkorange;
 }
 
-.best_button {
-   max-width: 251px;
-   
-   margin-bottom: 33px;
-   box-shadow: 0 3px 0 rgb(200,70,50);
-   background: darkorange;
-}
-  
-.best_button:active {
-   margin-top: 23px;
-   margin-bottom: 30px;
-   box-shadow: 0 1px 0 rgb(200,70,50);
+.packages .best_button {
+  max-width: 251px;
+  margin-bottom: 33px;
+
+  background-color: darkorange;
+  box-shadow: 0 3px 0 rgb(200,70,50);
 }
 
-@media (min-width:481px) and (max-width:768px) {
-  .main, .basic, .description {
-    width: 586px;
-    max-width: 590px;
-    margin: 0 auto;
-    border: 1px solid transparent;
-  }
-  
-  .offer {
-    position: static;
-    max-width: 290px;
-  }
-  
-  .best_offer {
-    float: right;
-    margin-top: 0;
-  }
-  
-  .standard {
-    margin: 17px 0;
-  }
-  
-  .ultimate {
-    margin: 0 auto;
-  }
-  
-  .description {
-    font-size: 1.5em;
-    padding-bottom: .5em;
-  }
-}
+.packages .best_button:active {
+  margin-top: 23px;
+  margin-bottom: 30px;
 
-@media (max-width:480px) {
-  .main, .basic, .description {
-    max-width: 300px;
-    margin: 0 auto;
-  }
-  
-  .offer {
-    position: static;
-    
-    max-width: 290px;
-    margin: 1em auto;
-  }
-  
-  .best_offer {
-    max-width: 296px;
-  }
-  
-  .description {
-    font-size: 1.5em;
-    padding-bottom: .5em;
-  }
+  box-shadow: 0 1px 0 rgb(200,70,50);
 }
