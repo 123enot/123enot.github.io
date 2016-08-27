@@ -98,7 +98,8 @@ nav a:hover {
 /* Banner styling */
 
 .banner {
-    background: cornflowerblue url(../images/banner_bg.jpg) no-repeat center center;
+    background: url(../images/banner_bg.jpg) no-repeat center center;
+    background-color: cornflowerblue;
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
 }
@@ -111,7 +112,7 @@ nav a:hover {
     text-align: center;
 
     color: white;
-    background: rgba(10,106,195, .2) url(../images/bg_small.png);
+    background: rgba(107,106,195,.1) url(../images/bg_small.png);
 }
 
 .banner .inner2 {
