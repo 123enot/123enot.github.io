@@ -161,7 +161,7 @@
   margin-top: 1px;
   padding-top: .35em;
   padding-bottom: .35em;
-  padding-left: 2.5em;
+  padding-left: 4em;
 
   text-transform: none;
 }
@@ -174,10 +174,10 @@
   background: rgba(245,245,245,1);
 }
 
-.offer ul li:before {
-  margin-right: .6em;
-
-  content: url( 'http://123enot.github.io/markup/l05/images/checked.png' );
+.offer ul li.checked {
+  background-image: url( 'http://123enot.github.io/markup/l05/images/checked.png' );
+  background-repeat: no-repeat;
+  background-position: 32px 5px;
 }
 
 .packages .button {
