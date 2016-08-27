@@ -8,8 +8,9 @@
 
   position: relative;
 
-  width: 100%;
   min-width: 1023px;
+  width: 100%;
+
   margin: 0 auto;
   padding-bottom: 70px;
 }

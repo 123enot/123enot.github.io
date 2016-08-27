@@ -1,13 +1,24 @@
+.service_bla_bla {
+    width: 100%;
+}
+
 .all_services {
     width: 1023px;
     margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.services_details .all_services {
+    margin-left: 0;
+    padding-left: 180px;
 }
 
 .common_service {
-    display: inline-block;
-    width: 32%;
     position: relative;
 
+    display: inline-block;
+
+    width: 32%;
     margin: 0 5px;
     padding-top: 150px;
 
@@ -21,17 +32,15 @@
 
     width: 140px;
     height: 140px;
-
     margin-top: 5px;
     margin-left: -70px;
 
+    content: '';
+
+    border-radius: 100%;
     background: url(../images/service_icon.png);
     background-color: rgb(48,112,168);
-    border-radius: 100%;
-
     box-shadow: inset 6px 3px 0 0 rgb(28,102,138);
-
-    content: '';
 }
 
 .common_service.special_service_1:after {
@@ -47,14 +56,15 @@
 }
 
 
-.common_service h3,
-.common_service p {
+.common_service h2,
+.common_service p,
+.services_details h3,
+.services_details li {
     font-family: Arial, 'Trebuchet MS', sans-serif ;
     font-weight: normal;
-
 }
 
-.common_service h3 {
+.common_service h2 {
     font-size: 30px;
 
     margin: 20px 0;
@@ -63,14 +73,124 @@
 }
 
 .common_service p {
-    font-size: 14px;
-    text-transform: none;
-    letter-spacing: .05em;
-
-    line-height: 1.8em;
-
     margin: 0;
     padding: 0 8px;
+}
+
+.services_details {
+    position: relative;
+
+    width: 100%;
+}
+
+.services_details:after {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background: url(../images/services_bg.jpg) no-repeat 0 -20px;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.services_details .bg_2 {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(5,10,15,.75);
+}
+
+.bg_2:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    opacity: .4;
+    background-color: rgb(6,15,22);
+    background-image: url(../images/services_bg21.png);
+}
+
+.services_details h3,
+.services_details ul {
+    width: 650px;
+}
+
+.services_details ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.regular {
+    font-size: 14px;
+    line-height: 1.8em;
+
+    letter-spacing: .05em;
+    text-transform: none;
 
     color: rgb(153,153,153);
+}
+
+.services_details h2 {
+    font-size: 26px;
+    line-height: 1.8;
+
+    width: 710px;
+    padding-bottom: 0;
+
+    text-align: left;
+
+    color: rgb(238,129,41);
+}
+
+.services_details h3 {
+    font-style: italic;
+
+    text-transform: none;
+
+    color: white;
+}
+
+li.regular {
+    position: relative;
+
+    padding: .5em 0 .5em 3em;
+
+    letter-spacing: .03em;
+}
+
+li.regular:nth-of-type(2) {
+    color: rgb(48,112,168);
+}
+
+li.regular:after {
+    position: absolute;
+    top: 16px;
+    left: 22px;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 100%;
 }
