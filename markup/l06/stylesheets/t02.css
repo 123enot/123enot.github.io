@@ -9,7 +9,7 @@ body {
 
 div.testimonials {
   min-width: 1023px;
-  background: url( https://123enot.github.io/markup/l06/images/bg_2.jpg );
+  background: cornflowerblue url( https://123enot.github.io/markup/l06/images/bg_2.jpg );
 
   position: relative;
   z-index: -2;
@@ -67,15 +67,15 @@ div.feedback {
   margin: 0 0 0 125px;
   
   border: 1px solid lavender;
-  -webkit-box-shadow: 1px 1px lavender;
-     -moz-box-shadow: 1px 1px lavender;
-          box-shadow: 1px 1px lavender;
+  -webkit-box-shadow: 1px 1px 1px darkgray;
+     -moz-box-shadow: 1px 1px 1px darkgray;
+          box-shadow: 1px 1px 1px darkgray;
   background: rgb(247,247,247);
 }
 
 .feedback p {
   margin: 0 14px;
-  padding: 8px 0 10px 0;
+  padding: 8px 0 15px 0;
 }
 
 .feedback .name {
