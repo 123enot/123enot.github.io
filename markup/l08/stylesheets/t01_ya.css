@@ -61,5 +61,15 @@ input[type='checkbox'] {
     background-color: gold;
 
     -webkit-clip-path: polygon(0 0, 0 100%, 100% 50%);
+    -moz-clip-path: url("../t01_ya.html#poly");
     clip-path: polygon(0 0, 0 100%, 100% 50%);
 }
+
+h3 {
+    font-family: Verdana, sans-serif;
+    font-weight: normal;
+
+    padding: 2em;
+    color: lightcoral;
+}
+
