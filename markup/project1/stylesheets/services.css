@@ -19,15 +19,23 @@
     top: 0;
     left: 50%;
 
-    width: 141px;
-    height: 141px;
+    width: 140px;
+    height: 140px;
 
     margin-top: 5px;
     margin-left: -70px;
 
     background: url(../images/service_icon.png);
+    background-color: rgb(48,112,168);
+    border-radius: 100%;
+
+    box-shadow: inset 6px 3px 0 0 rgb(28,102,138);
 
     content: '';
+}
+
+.common_service.special_service_1:after {
+    background-position: 1px 0;
 }
 
 .common_service.special_service_2:after {
