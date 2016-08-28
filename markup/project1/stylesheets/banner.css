@@ -94,7 +94,7 @@ nav a {
 
 nav a:hover {
     color: rgba(48,112,168,1);
-    border-bottom: 4px solid rgba(48,112,168,1);
+    border-bottom: 5px solid rgba(48,112,168,1);
 }
 
 /* Banner styling */

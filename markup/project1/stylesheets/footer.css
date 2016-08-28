@@ -1,0 +1,139 @@
+div.contact_info {
+    position: relative;
+    width: 1023px;
+
+    margin: 0 auto;
+}
+
+.font {
+    font-size: 14px;
+    font-family: 'Trebuchet MS', Arial, sans-serif ;
+    font-weight: normal;
+
+    text-transform: none;
+    color: rgb(102,102,102);
+}
+
+.contact_info div {
+    display: inline-block;
+    width: calc(50% - 2px);
+
+    margin: 0;
+    padding: 0;
+}
+
+.contact_info .map {
+    position: absolute;
+    right: 0;
+
+    height: 100%;
+
+    background: url(../images/map.jpg) no-repeat left top;
+    background-size: 125%;
+}
+
+div.contacts {
+    padding: 30px 0 30px 0;
+}
+
+.contacts ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.contacts li {
+    padding-bottom: 5px;
+}
+
+li.call {
+    position: relative;
+    margin: 0;
+    padding: 5px 5px 10px 40px;
+}
+
+.call:after {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 24px;
+    height: 27px;
+    background: url(../images/contact_icon_col.png) no-repeat 0 0;
+    -webkit-background-size: 80%;
+    background-size: 80%;
+
+    content: '';
+}
+
+.call.tel:after {
+    background-position: 0 -27px;
+}
+
+.call.mail:after {
+    background-position: 0 -54px;
+}
+
+.ext_links a {
+    position: relative;
+
+    display: inline-block;
+    line-height: 46px;
+
+    width: 46px;
+    height: 46px;
+
+    margin: 20px 10px;
+
+    color: transparent;
+
+    border-radius: 100%;
+}
+
+.ext_links a:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: url(../images/net_icon.png) no-repeat 0 0;
+
+    content: '';
+}
+
+.ext_links a.tw:after {
+    background-position: -69px 0;
+}
+
+.ext_links a.in:after {
+    background-position: -138px 0;
+}
+
+.ext_links a:hover {
+    background-color: orange;
+}
+
+footer {
+    width: 100%;
+    min-width: 1023px;
+
+    text-align: center;
+
+    padding: 30px 0;
+
+    background-color: rgb(48,112,168);
+}
+
+footer p {
+    color: white;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+footer span.brand {
+    color: black;
+}
