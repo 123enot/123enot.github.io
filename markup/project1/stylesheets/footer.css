@@ -73,6 +73,10 @@ li.call {
     background-size: 80%;
 }
 
+.call.address:after {
+    background-position: 0 0;
+}
+
 .call.tel:after {
     background-position: 0 -27px;
 }
@@ -109,6 +113,10 @@ li.call {
     background: url(../images/net_icon.png) no-repeat 0 0;
 }
 
+.ext_links a.fb:after {
+    background-position: 0 0;
+}
+
 .ext_links a.tw:after {
     background-position: -69px 0;
 }
@@ -118,7 +126,7 @@ li.call {
 }
 
 .ext_links a:hover {
-    background-color: palegreen;
+    background-color: yellow;
 }
 
 footer {
