@@ -3,9 +3,19 @@
 function pow(num, power) {
     var result = 1;
 
-    for (var i = 1; i <= power; i++) {
-        result *= num;
+    if (power < 0) {
+
+        for (var i = 1; i <= -power; i++) {
+            result /= num;
+        }
+
+    } else {
+        for (i = 1; i <= power; i++) {
+            result *= num;
+        }
     }
 
     return result;
 }
+
+console.log( pow(5, -4) );
