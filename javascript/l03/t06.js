@@ -18,4 +18,7 @@ function pow(num, power) {
     return result;
 }
 
-console.log( pow(5, -4) );
+var n = 5,
+    p = -5;
+
+console.log( 'Number ' + n + ' in power (' + p + ') = ' + pow(n, p) );
