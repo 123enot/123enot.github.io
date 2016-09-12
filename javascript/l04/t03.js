@@ -10,4 +10,4 @@ function cutString(str) {
 
 var string = 'Here\'s some text to test the function "three dots"';
 
-console.log( cutString(string) );
+console.log( 'Result: "' + cutString(string) + '"');
