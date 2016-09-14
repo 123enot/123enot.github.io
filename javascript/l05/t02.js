@@ -6,7 +6,6 @@ function multiplyNumeric(obj) {
             obj[keys] *= 2;
         }
     }
-
     return obj;
 }
 
