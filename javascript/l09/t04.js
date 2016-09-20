@@ -5,18 +5,18 @@ function f(x) {
 }
 
 function makeCaching(f) {
+    var cache = {};
+
     return function () {
-        var result;
-        if (!cach[arguments[0]]) {
-            result = f.apply(this, arguments);
-            cach[arguments[0]] = result;
-            return result;
+
+        if (!cache[arguments[0]]) {
+            cache[arguments[0]] = f.apply(this, arguments);
         }
-        return cach[arguments[0]];
+
+        return cache[arguments[0]];
     }
 }
 
-var cach = {};
 
 // Results:
 
