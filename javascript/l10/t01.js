@@ -11,7 +11,7 @@ var obj = {
     extractNumber: function() {
         var num = [];
         for (var keys in this) {
-            if (typeof this[keys] === 'number') { num.push(this[keys]) }
+            if ((typeof this[keys] === 'number') || (!isNaN(+this[keys]))) { num.push(+this[keys]) }
         }
         return num;
     },
@@ -19,10 +19,12 @@ var obj = {
     extractString: function() {
         var str = [];
         for (var keys in this) {
-            if (typeof this[keys] === 'string') { str.push(this[keys]) }
+            if ((typeof this[keys] === 'string') && (isNaN(+this[keys]))) { str.push(this[keys]) }
         }
         return str;
-    }
+    },
+
+    unknownType: '23'
 };
 
 // Result:
