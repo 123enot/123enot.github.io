@@ -1,4 +1,4 @@
-/* Convert object properties values into 2 arrays: with numbers and strings respectively */
+/* Write methods which convert object properties values into 2 arrays: with numbers and strings respectively */
 
 var obj = {
     person1Age: 20,
@@ -6,21 +6,25 @@ var obj = {
     person2Age: 30,
     person2Name: 'Petrov',
     person3Age: 40,
-    person3Name: 'Sidorov'
+    person3Name: 'Sidorov',
+
+    extractNumber: function() {
+        var num = [];
+        for (var keys in this) {
+            if (typeof this[keys] === 'number') { num.push(this[keys]) }
+        }
+        return num;
+    },
+
+    extractString: function() {
+        var str = [];
+        for (var keys in this) {
+            if (typeof this[keys] === 'string') { str.push(this[keys]) }
+        }
+        return str;
+    }
 };
 
-//var ages = [20,30,40];
-//var names = ['Ivanov', 'Petrov', 'Sidorov'];
-
-var ages = [],
-    names = [];
-
-for (var keys in obj) {
-    if (typeof obj[keys] === 'number') { ages.push(obj[keys]) }
-    if (typeof obj[keys] === 'string') { names.push(obj[keys]) }
-}
-
-
 // Result:
-console.log(ages);
-console.log(names);
+console.log(obj.extractNumber());
+console.log(obj.extractString());
