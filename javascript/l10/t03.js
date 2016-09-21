@@ -4,10 +4,7 @@
 // Expected Output: abeemrstw
 
 function sortStrings(str) {
-    var arr = str.split('');
-    arr.sort();
-    
-    return arr.join('');
+    return str.split('').sort().join('');
 }
 
 var str = 'webmaster';
