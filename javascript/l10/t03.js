@@ -6,8 +6,7 @@
 function sortStrings(str) {
     var arr = str.split('');
     arr.sort();
-    strG = str;
-
+    
     return arr.join('');
 }
 
