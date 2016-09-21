@@ -17,7 +17,7 @@ function shuffle(arr) {
 
 // Results:
 
-var arr = [23, 432, "fgd", 5234, '34', 12324, 'df', 734];
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
 for (var i = 0; i < 10; i ++) {
     console.log(shuffle(arr));
