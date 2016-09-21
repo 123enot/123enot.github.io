@@ -1,9 +1,16 @@
 /* Write a function shuffle(arr) to shuffle an array.  */
 
 function shuffle(arr) {
-    arr.sort(function () {
-        return (Math.random() < .5) ? -1 : 1;
+    var obj = {};
+
+    for (var i = 0; i < arr.length; i++) {
+        obj[arr[i]] = Math.random();
+    }
+
+    arr.sort(function (a, b) {
+        return obj[a] - obj[b];
     });
+
     return arr;
 }
 
