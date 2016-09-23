@@ -9,9 +9,10 @@ function f(x) {
 
 function delay(f, n) {
     return function () {
-        var args = arguments;
+        var args = arguments,
+            ctx = this;
         setTimeout(function () {
-            f.apply(null, args);
+            f.apply(ctx, args);
         }, n);
     };
 }
