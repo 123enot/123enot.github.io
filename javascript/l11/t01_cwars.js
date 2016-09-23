@@ -25,6 +25,7 @@ var typer = (function() {
 
     return {
         isNumber: function (data) {
+            if (isNaN(data)) return;
             return this.getClass(data) === 'Number';
         },
         isString: function (data) {
@@ -51,6 +52,9 @@ var typer = (function() {
         isUndefined: function (data) {
             return this.getClass(data) === 'Undefined';
         },
+        isBoolean: function (data) {
+            return this.getClass(data) === 'Boolean';
+        },
         getClass: function (cls) {
             var toString = ({}).toString;
             return toString.call(cls).slice(8, -1);
@@ -61,9 +65,9 @@ var typer = (function() {
 
 // Testing:
 
-var str = 'number string array function date regExp error null undefined',
+var str = 'number string array function date regExp error null undefined boolean',
     props = str.split(' '),
-    arr = [4, '3', [3, 54, 'er'], function() {}, new Date, /f/, new Error, null, undefined],
+    arr = [4, '3', [3, 54, 'er'], function() {}, new Date, /f/, new Error, null, undefined, false],
     keys = [];
 
 props = props.map(function (item) {
@@ -74,7 +78,7 @@ for (var key in typer) {
     keys.push(key);
 }
 
-for (var i = 0; i < 9; i++) {
+for (var i = 0; i < 10; i++) {
     console.log( arr[i] );
     console.log( keys[i] + ': ' + typer['is' + props[i]](arr[i]) );
 }
