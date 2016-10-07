@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Dots in ellipse</title>
     <script src="js_dots_in_ellipse.js" async></script>
     <style>
         body {
@@ -16,7 +16,7 @@
             left: 0;
 
             background-color: brown;
-            opacity: .9;
+            opacity: .8;
             color: transparent;
         }
 
@@ -30,13 +30,55 @@
             border-radius: 50%;
             background-color: yellow;
         }
+
+        table {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            font-family: Helvetica, sans-serif;
+            font-size: .8em;
+            border-collapse: collapse;
+            border: 1px solid darkgrey;
+            background-color: lavender;
+
+            opacity: .7;
+        }
+
+        th, tr, td {
+            padding: 5px 10px;
+
+            text-align: right;
+            border: 1px solid darkgrey;
+        }
+
+        tr:nth-of-type(even) {
+            background-color: linen;
+        }
+
+        th {
+            text-align: center;
+            background-color: rgb(229,76,16);
+            color: white;
+        }
+
+        h1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+            margin: auto;
+            text-align: center;
+            color: red;
+        }
     </style>
 </head>
+
 <body>
-    <canvas id="visual" width="1500" height="1000"></canvas>
-    <div id="ellipse">..</div>
+    <canvas id="visual" width="1200" height="1000"></canvas>
+    <div id="ellipse"></div>
 </body>
+
 </html>
-
-
 
