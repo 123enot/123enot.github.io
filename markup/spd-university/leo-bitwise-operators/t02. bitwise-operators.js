@@ -53,38 +53,24 @@ a[maxBit] = '1';
 b[maxBit] = '1';
 c[maxBit] = '1';
 
-let arrA = array.filter(function(item) {
+let arrA = filterInfo(array, a),
+
+    arrB = filterInfo(array, b),
+
+    arrC = filterInfo(array, c);
+
+function filterInfo(arr, obj) {
+    return arr.filter(function(item) {
         if (item.toString(2).length >= maxBit) {
             let num = item.toString(2).slice(-maxBit).split('');
 
-            for (let key in a) {
-                if (a[key] !== num[num.length - key]) return false;
-            }
-            return true;
-        }
-    }),
-
-    arrB = array.filter(function(item) {
-        if (item.toString(2).length >= maxBit) {
-            let num = item.toString(2).slice(-maxBit).split('');
-
-            for (let key in b) {
-                if (b[key] !== num[num.length - key]) return false;
-            }
-            return true;
-        }
-    }),
-
-    arrC = array.filter(function(item) {
-        if (item.toString(2).length >= maxBit) {
-            let num = item.toString(2).slice(-maxBit).split('');
-
-            for (let key in c) {
-                if (c[key] !== num[num.length - key]) return false;
+            for (let key in obj) {
+                if (obj[key] !== num[num.length - key]) return false;
             }
             return true;
         }
     });
+}
 
 console.log('array A: ' + arrA);
 console.log('array B: ' + arrB);
