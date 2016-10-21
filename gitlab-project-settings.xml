@@ -1,0 +1,34 @@
+<application>
+  <component name="SettingsState">
+    <option name="host" value="https://gitlab.com/" />
+    <option name="token" value="5BSWgeJQQzcmSioccJN9" />
+    <option name="projects">
+      <list>
+        <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/vovchik_manko/spd-university-js-leo-boolean-algebra-person.git" />
+          <option name="name" value="spd-university-js-leo-boolean-algebra-person" />
+          <option name="namespace" value="vovchik_manko" />
+          <option name="sshUrl" value="git@gitlab.com:vovchik_manko/spd-university-js-leo-boolean-algebra-person.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/vovchik_manko/spd-university-js-leo-ellipse.git" />
+          <option name="name" value="spd-university-js-leo-ellipse" />
+          <option name="namespace" value="vovchik_manko" />
+          <option name="sshUrl" value="git@gitlab.com:vovchik_manko/spd-university-js-leo-ellipse.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/vovchik_manko/spd-university-js-mm.git" />
+          <option name="name" value="spd-university-js-mm" />
+          <option name="namespace" value="vovchik_manko" />
+          <option name="sshUrl" value="git@gitlab.com:vovchik_manko/spd-university-js-mm.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/vovchik_manko/spd-university-js-mm-classwork.git" />
+          <option name="name" value="spd-university-js-mm-classwork" />
+          <option name="namespace" value="vovchik_manko" />
+          <option name="sshUrl" value="git@gitlab.com:vovchik_manko/spd-university-js-mm-classwork.git" />
+        </ProjectDto>
+      </list>
+    </option>
+  </component>
+</application>
