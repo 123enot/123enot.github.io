@@ -124,7 +124,6 @@ h1 {
     text-align: center;
     text-transform: capitalize;
 
-    -webkit-box-flex: 1;
     -ms-flex: 1 100%;
     flex: 1 100%;
 }
@@ -180,8 +179,7 @@ h1 {
     border: 1px solid #076cce;
     border-radius: 2px;
     background-color: #3998f5;
-    background-image: -webkit-linear-gradient(top, #3998f5, #1777d9);
-    background-image:         linear-gradient(to bottom, #3998f5, #1777d9);
+    background-image: linear-gradient(to bottom, #3998f5, #1777d9);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), 0 1px 0 #3998f5;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .31);
 }
@@ -195,8 +193,7 @@ h1 {
 }
 
 .product-proto__download:hover {
-    background-image: -webkit-linear-gradient(top, #1777d9, #3998f5);
-    background-image:         linear-gradient(to bottom, #1777d9, #3998f5);
+    background-image: linear-gradient(to bottom, #1777d9, #3998f5);
 }
 
 .product-proto__os {
@@ -255,7 +252,7 @@ small {
 
     content: '';
 
-    background: yellow url(img/features_sprite.jpg) -12px -2px;
+    background: transparent url(img/features_sprite.jpg) -12px -2px;
 }
 
 .features-content_security:after {
@@ -350,7 +347,7 @@ small {
 }
 
 .features-content__new-feature-detail {
-    font-size: 13.5px;
+    font-size: 13px;
 
     position: relative;
 }
@@ -409,10 +406,10 @@ small {
     border-radius: 5px;
     box-shadow: 0 0 7px #aaa;
 
-    -webkit-box-flex: 1;
     -ms-flex: 1 1 254px;
     flex: 1 1 254px;
-    -min-width: 254px;
+
+    min-width: 254px;
 }
 
 .pref-plan__title {
@@ -493,7 +490,6 @@ small {
     padding-top: 13px;
     padding-bottom: 21px;
 
-    -webkit-transition: all .1s;
     transition: all .1s;
     text-align: center;
     letter-spacing: 4px;
@@ -508,7 +504,6 @@ small {
 .pref-plan_submit-exclusive {
     margin-bottom: 44px;
 
-    -webkit-transition: all .1s;
     transition: all .1s;
 
     color: #fff;
@@ -568,7 +563,6 @@ small {
     margin: 0;
 
     content: url(img/zoom.png);
-    -webkit-transition: all ease-in .2s;
     transition: all ease-in .2s;
 
     opacity: 0;
@@ -710,34 +704,28 @@ small {
 }
 
 .container {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
 }
 
 .container_for-header {
-    -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .container_for-pricing {
-    -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
 }
 
 .price-plan-wrapper {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 
@@ -746,37 +734,30 @@ small {
 
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
 }
 
 .feedback-wrapper {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
 }
 
 .container_for-social {
-    -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
 }
 
 .container_for-footer {
-    -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
@@ -918,13 +899,13 @@ small {
 
 @media screen and (max-width: 890px) {
     .features-media {
-        background-position: 320px 134px;
+        background-position: 330px 134px;
     }
 
     .features-content__new-feature,
     .features-content__new-feature-detail {
         top: 0;
-        left: 36px;
+        left: 40px;
     }
 
     .features-content__new-feature-detail {
@@ -976,7 +957,6 @@ small {
         min-width: 220px;
         max-width: 250px;
 
-        -webkit-box-flex: 1;
         -ms-flex: 1 0 220px;
         flex: 1 0 220px;
     }
@@ -1004,21 +984,26 @@ small {
 
 @media screen and (max-width: 660px) {
     .container_for-header {
-        min-height: 110px;
+        min-height: 75px;
 
-        -webkit-box-align: end;
         -ms-flex-align: end;
         align-items: flex-end;
     }
 
     .header__logo {
-        margin: 0 auto 5px auto;
+        margin: 10px auto;
+
+        max-height: 35px;
 
         text-align: center;
 
-        -webkit-box-flex: 1;
         -ms-flex: 1 100%;
         flex: 1 100%;
+        align-self: flex-start;
+    }
+
+    h1 {
+        margin: 0;
     }
 
     .nav {
@@ -1026,7 +1011,6 @@ small {
 
         text-align: center;
 
-        -webkit-box-flex: 1;
         -ms-flex: 1 100%;
         flex: 1 100%;
     }
@@ -1036,7 +1020,7 @@ small {
         padding-bottom: 0;
 
         color: #eee;
-        border: 2px solid transparent;
+        border: 1px solid transparent;
         border-radius: 5px 5px 0 0;
         background-color: #333;
     }
@@ -1094,7 +1078,6 @@ small {
 
 @media screen and (max-width: 442px) {
     .container_for-nav {
-        display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
 
@@ -1107,7 +1090,6 @@ small {
     }
 
     .header-flex-item {
-        display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
 
@@ -1121,7 +1103,6 @@ small {
         margin: 0;
         padding: 2px;
 
-        -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
         flex: 1 1 auto;
     }
@@ -1139,12 +1120,35 @@ small {
         font-size: 90%;
     }
 
+    .product-proto__download {
+        top: -15px;
+
+        padding: 5px 30px 5px 10px;
+    }
+
+    .product-proto__download:after {
+        top: 0;
+        left: 140px;
+    }
+
     .product-proto__caption {
         padding-bottom: 30px;
     }
 
-    .product-proto__download {
-        top: -15px;
+    .features-media {
+        background-position: 40px 460px;
+    }
+
+    .features-content__new-feature,
+    .features-content__new-feature-detail {
+        top: 0;
+        left: 36px;
+
+        max-width: 230px;
+    }
+
+    .feedback {
+        max-width: 240px;
     }
 
     .social__title {
@@ -1154,4 +1158,6 @@ small {
     .social-links {
         text-align: center;
     }
+
+
 }
