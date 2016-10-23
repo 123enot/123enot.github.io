@@ -17,6 +17,12 @@
           <option name="sshUrl" value="git@gitlab.com:vovchik_manko/spd-university-js-leo-ellipse.git" />
         </ProjectDto>
         <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/vovchik_manko/spdu-home-task-04.git" />
+          <option name="name" value="spd-university-js-leo-population-list" />
+          <option name="namespace" value="vovchik_manko" />
+          <option name="sshUrl" value="git@gitlab.com:vovchik_manko/spdu-home-task-04.git" />
+        </ProjectDto>
+        <ProjectDto>
           <option name="httpUrl" value="https://gitlab.com/vovchik_manko/spd-university-js-mm.git" />
           <option name="name" value="spd-university-js-mm" />
           <option name="namespace" value="vovchik_manko" />
@@ -27,6 +33,12 @@
           <option name="name" value="spd-university-js-mm-classwork" />
           <option name="namespace" value="vovchik_manko" />
           <option name="sshUrl" value="git@gitlab.com:vovchik_manko/spd-university-js-mm-classwork.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/vovchik_manko/spd-university-js-mm-rwd-part01.git" />
+          <option name="name" value="spd-university-js-mm-rwd-part01" />
+          <option name="namespace" value="vovchik_manko" />
+          <option name="sshUrl" value="git@gitlab.com:vovchik_manko/spd-university-js-mm-rwd-part01.git" />
         </ProjectDto>
       </list>
     </option>
