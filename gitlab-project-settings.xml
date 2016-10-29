@@ -35,10 +35,10 @@
           <option name="sshUrl" value="git@gitlab.com:vovchik_manko/spd-university-js-mm.git" />
         </ProjectDto>
         <ProjectDto>
-          <option name="httpUrl" value="https://gitlab.com/vovchik_manko/spd-university-js-mm-classwork.git" />
-          <option name="name" value="spd-university-js-mm-classwork" />
+          <option name="httpUrl" value="https://gitlab.com/vovchik_manko/spd-university-js-mm-microformats-and-polyfill.git" />
+          <option name="name" value="spd-university-js-mm-microformats-and-polyfill" />
           <option name="namespace" value="vovchik_manko" />
-          <option name="sshUrl" value="git@gitlab.com:vovchik_manko/spd-university-js-mm-classwork.git" />
+          <option name="sshUrl" value="git@gitlab.com:vovchik_manko/spd-university-js-mm-microformats-and-polyfill.git" />
         </ProjectDto>
         <ProjectDto>
           <option name="httpUrl" value="https://gitlab.com/vovchik_manko/spd-university-js-mm-rwd-part01.git" />
