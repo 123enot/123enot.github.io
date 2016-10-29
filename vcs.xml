@@ -22,8 +22,12 @@
           <option name="url" value="https://github.com/123enot/learning_git.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://gitlab.com/vovchik_manko/spdu-home-task-05.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="C:\Users\KoleTerner\what-is-git" />
+    <option name="cloneParentDir" value="C:\Users\KoleTerner\WebstormProjects" />
   </component>
 </application>

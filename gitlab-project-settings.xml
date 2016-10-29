@@ -17,6 +17,12 @@
           <option name="sshUrl" value="git@gitlab.com:vovchik_manko/spd-university-js-leo-ellipse.git" />
         </ProjectDto>
         <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/vovchik_manko/spdu-home-task-05.git" />
+          <option name="name" value="spd-university-js-leo-graph-iterations" />
+          <option name="namespace" value="vovchik_manko" />
+          <option name="sshUrl" value="git@gitlab.com:vovchik_manko/spdu-home-task-05.git" />
+        </ProjectDto>
+        <ProjectDto>
           <option name="httpUrl" value="https://gitlab.com/vovchik_manko/spdu-home-task-04.git" />
           <option name="name" value="spd-university-js-leo-population-list" />
           <option name="namespace" value="vovchik_manko" />
