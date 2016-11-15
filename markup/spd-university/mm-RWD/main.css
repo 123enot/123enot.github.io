@@ -1107,12 +1107,18 @@ h1 {
     }
 }
 
+@media screen and (min-width: 686px) and (max-width: 930px) {
+    .section {
+        padding-top: 70px;
+    }
+}
 
 @media screen and (min-width: 381px) and (max-width: 768px) {
     .section-title {
-        font-size: 250%;
-    }
+        font-size: 200%;
 
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -1165,6 +1171,10 @@ h1 {
 
 
 @media screen and (max-width: 685px) {
+    .section {
+        padding-top: 90px;
+    }
+
     .container_for-header {
         min-height: 75px;
 
@@ -1209,20 +1219,6 @@ h1 {
 
     .header__nav-item:hover {
         background-color: #ddd;
-    }
-
-    .section-title {
-        font-size: 200%;
-
-        padding-top: 0;
-    }
-
-    .about-product {
-        padding-top: 0;
-    }
-
-    .section {
-        padding-top: 120px;
     }
 
     .feedback {
@@ -1291,16 +1287,10 @@ h1 {
 
 
 @media screen and (max-width: 380px) {
-    .section {
-        padding-top: 90px;
-    }
-
-    .section-title {
-        margin-bottom: 5px;
-    }
-
     .section-title {
         font-size: 140%;
+
+        margin-bottom: 5px;
     }
 
     .about-product__summary,
