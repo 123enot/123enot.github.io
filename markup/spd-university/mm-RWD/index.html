@@ -5,213 +5,204 @@
     <meta name="description" content="e-commerce platform">
     <meta name="keywords" content="launchpad, platform, e-commerce">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Launchpad - RWD</title>
+    <link rel="icon" href="img/logo_small_2.png" type="image/jpg" sizes="20x28">
+    <title>Task 05. Launchpad</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <style>
-        .shadow {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-
-            background-color: #333;
-            opacity: .99;
-        }
-
-        .align {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-
-            max-width: 100%;
-
-            margin: auto;
-        }
-
-        .hide {
-            display: none;
-        }
-    </style>
 </head>
 <body>
-    <header class="header container container_for-header">
-        <a href="#" title="About Launchpad" class="header__logo">
-            <img src="img/logo_small.png" alt="logo" class="header__logo-img">
-            <h1>launchpad</h1>
-        </a>
-        <nav class="nav">
-            <ul class="container_for-nav">
-                <li class="header-flex-item"><a href="#tour" class="primary header__nav-item nav-item">Tour</a></li>
-                <li class="header-flex-item"><a href="#strengths" class="header__nav-item nav-item">Features</a></li>
-                <li class="header-flex-item"><a href="#price" class="header__nav-item nav-item">Pricing</a></li>
-                <li class="header-flex-item"><a href="#support" class="header__nav-item nav-item">Support</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="header container container_for-header">
+    <a href="#" title="About Launchpad" class="header__logo" id="#start">
+        <img src="img/logo_small_2.png" alt="logo" class="header__logo-img">
+        <h1>launchpad</h1>
+    </a>
+    <nav class="nav">
+        <ul class="container_for-nav">
+            <li class="header-flex-item"><a href="#tour" class="primary header__nav-item nav-item">Tour</a></li>
+            <li class="header-flex-item"><a href="#strengths" class="header__nav-item nav-item">Features</a></li>
+            <li class="header-flex-item"><a href="#price" class="header__nav-item nav-item">Pricing</a></li>
+            <li class="header-flex-item"><a href="#support" class="header__nav-item nav-item">Support</a></li>
+        </ul>
+        <a href="#share-menu" class="sr-only sr-only-focusable">Skip to social links</a>
+    </nav>
 
-    <section class="about-product section" id="tour">
-        <h2 class="section-title about-product_title">introducing <span class="about-product_strong">Paypaul</span></h2>
-        <p class="about-product__summary product-proto_font-color">A revolutionary e-commerce Platform</p>
-        <figure class="product-proto">
-            <img src="img/banner.png" alt="devices" class="product-proto__pic">
-            <figcaption class="product-proto__figure-description">
-                <p class="product-proto__caption product-proto_font-color">Take it for a spin <strong>today!</strong></p>
-                <a href="http://localhost:63342/123enot.github.io/markup/spd-university/mm-RWD/img/banner.png" download class="product-proto__download">Free Download</a>
-                <p class="product-proto__caption product-proto_font-color product-proto_bottom">
-                    <small>Available for <span class="product-proto__os strong">Mac, Windows, <abbr title="iPhone Operating System">ios</abbr>,</span> and
-                        <span class="product-proto__os strong">Android</span></small>
-                </p>
+</header>
+
+
+<section class="about-product section" id="tour">
+    <h2 class="section-title about-product_title">introducing <b class="about-product_strong">Paypaul</b></h2>
+    <p class="about-product__summary product-proto_font-color">A revolutionary e-commerce Platform</p>
+    <figure class="product-proto">
+        <img src="img/banner.png" alt="devices" class="product-proto__pic">
+        <figcaption class="product-proto__figure-description">
+            <p class="product-proto__caption product-proto_font-color">Take it for a spin <strong>today!</strong></p>
+            <a href="http://localhost:63342/123enot.github.io/markup/spd-university/mm-RWD/img/banner.png" download class="product-proto__download">Free Download</a>
+            <p class="product-proto__caption product-proto_font-color product-proto_bottom">
+                <small class="small">Available for <b class="product-proto__os strong">Mac, Windows, <abbr title="iPhone Operating System">ios</abbr>,</b> and
+                    <b class="product-proto__os strong">Android</b></small>
+            </p>
+        </figcaption>
+    </figure>
+</section>
+
+<div class="banner-content">
+    <section class="features section" id="strengths">
+        <h2 class="section-title features_title">newly added <strong class="section-title_strong">features</strong></h2>
+        <figure class="features-media">
+            <figcaption class="features-media-caption">
+                <dl class="features-content">
+                    <dt class="features-content__new-feature features-content_options">New payment options</dt>
+                    <dd class="features-content__new-feature-detail features-content_options">Now you can add Debit, Visa, Mastercard, Amex, and more.</dd>
+                    <dt class="features-content__new-feature features-content_security">Increased security</dt>
+                    <dd class="features-content__new-feature-detail features-content_security">Protecting your data from predators is our top priority.</dd>
+                    <dt class="features-content__new-feature features-content_mobile">Mobile ready</dt>
+                    <dd class="features-content__new-feature-detail features-content_mobile">Download and use our app on your favourite mobile device.</dd>
+                    <dt class="features-content__new-feature features-content_customize">Customizable widgets</dt>
+                    <dd class="features-content__new-feature-detail features-content_customize">Keep an eye sales, reviews, stock levels, and general store performance.</dd>
+                    <dt class="features-content__new-feature features-content_new-design">Intuitive new design</dt>
+                    <dd class="features-content__new-feature-detail features-content_new-design">We redesigned and re-built <br>the user interface from inside out.</dd>
+                </dl>
             </figcaption>
         </figure>
     </section>
+</div>
 
-    <div class="banner-content">
-        <section class="features section" id="strengths">
-            <h2 class="section-title features_title">newly added <strong class="section-title_strong">features</strong></h2>
-            <figure class="features-media">
-                <figcaption class="features-media-caption">
-                    <dl class="features-content">
-                        <dt class="features-content__new-feature features-content_options">New payment options</dt>
-                        <dd class="features-content__new-feature-detail features-content_options">Now you can add Debit, Visa, Mastercard, Amex, and more.</dd>
-                        <dt class="features-content__new-feature features-content_security">Increased security</dt>
-                        <dd class="features-content__new-feature-detail features-content_security">Protecting your data from predators is our top priority.</dd>
-                        <dt class="features-content__new-feature features-content_mobile">Mobile ready</dt>
-                        <dd class="features-content__new-feature-detail features-content_mobile">Download and use our app on your favourite mobile device.</dd>
-                        <dt class="features-content__new-feature features-content_customize">Customizable widgets</dt>
-                        <dd class="features-content__new-feature-detail features-content_customize">Keep an eye sales, reviews, stock levels, and general store performance.</dd>
-                        <dt class="features-content__new-feature features-content_new-design">Intuitive new design</dt>
-                        <dd class="features-content__new-feature-detail features-content_new-design">We redesigned and re-built <br>the user interface from inside out.</dd>
-                    </dl>
-                </figcaption>
-            </figure>
+<section class="pricing section container container_for-pricing" id="price">
+    <h2 class="section-title pricing_title">pricing <strong class="section-title_strong">table</strong></h2>
+    <div class="price-plan-wrapper">
+        <section class="pref-plan">
+            <h3 class="pref-plan__title">plan 1</h3>
+            <h4 class="pref-plan__price">$10/month</h4>
+            <ul class="pref-list">
+                <li class="pref-plan__option"><strong class="pref-plan__pref-item">2x</strong> option 1</li>
+                <li class="pref-plan__option"><strong class="pref-plan__pref-item">free</strong> option 2</li>
+                <li class="pref-plan__option"><strong class="pref-plan__pref-item">unlimited</strong> option 3</li>
+                <li class="pref-plan__option"><strong class="pref-plan__pref-item">unlimited</strong> option 4</li>
+                <li class="pref-plan__option"><strong class="pref-plan__pref-item">1x</strong> option 5</li>
+            </ul>
+            <a href="#" class="pref-plan__submit button">purchase</a>
+        </section>
+        <section class="pref-plan">
+            <h3 class="pref-plan__title exclusive">plan 2</h3>
+            <h4 class="pref-plan__price">$20/month</h4>
+            <ul class="pref-list">
+                <li class="pref-plan__option"><strong class="pref-plan__pref-item">2x</strong> option 1</li>
+                <li class="pref-plan__option"><strong class="pref-plan__pref-item">free</strong> option 2</li>
+                <li class="pref-plan__option"><strong class="pref-plan__pref-item">unlimited</strong> option 3</li>
+                <li class="pref-plan__option"><strong class="pref-plan__pref-item">unlimited</strong> option 4</li>
+                <li class="pref-plan__option"><strong class="pref-plan__pref-item">1x</strong> option 5</li>
+            </ul>
+            <a href="#" class="pref-plan__submit button pref-plan_submit-exclusive">purchase</a>
+        </section>
+        <section class="pref-plan">
+            <h3 class="pref-plan__title">plan 3</h3>
+            <h4 class="pref-plan__price">$30/month</h4>
+            <ul class="pref-list">
+                <li class="pref-plan__option"><strong class="pref-plan__pref-item">2x</strong> option 1</li>
+                <li class="pref-plan__option"><strong class="pref-plan__pref-item">free</strong> option 2</li>
+                <li class="pref-plan__option"><strong class="pref-plan__pref-item">unlimited</strong> option 3</li>
+                <li class="pref-plan__option"><strong class="pref-plan__pref-item">unlimited</strong> option 4</li>
+                <li class="pref-plan__option"><strong class="pref-plan__pref-item">1x</strong> option 5</li>
+            </ul>
+            <a href="#" class="pref-plan__submit button">purchase</a>
         </section>
     </div>
+</section>
 
-    <section class="pricing section container container_for-pricing" id="price">
-        <h2 class="section-title pricing_title">pricing <strong class="section-title_strong">table</strong></h2>
-        <div class="price-plan-wrapper">
-            <section class="pref-plan">
-                <h3 class="pref-plan__title">plan 1</h3>
-                <h4 class="pref-plan__price">$10/month</h4>
-                <ul class="pref-list">
-                    <li class="pref-plan__option"><strong class="pref-plan__pref-item">2x</strong> option 1</li>
-                    <li class="pref-plan__option"><strong class="pref-plan__pref-item">free</strong> option 2</li>
-                    <li class="pref-plan__option"><strong class="pref-plan__pref-item">unlimited</strong> option 3</li>
-                    <li class="pref-plan__option"><strong class="pref-plan__pref-item">unlimited</strong> option 4</li>
-                    <li class="pref-plan__option"><strong class="pref-plan__pref-item">1x</strong> option 5</li>
-                </ul>
-                <a href="#" class="pref-plan__submit button">purchase</a>
-            </section>
-            <section class="pref-plan">
-                <h3 class="pref-plan__title exclusive">plan 2</h3>
-                <h4 class="pref-plan__price">$20/month</h4>
-                <ul class="pref-list">
-                    <li class="pref-plan__option"><strong class="pref-plan__pref-item">2x</strong> option 1</li>
-                    <li class="pref-plan__option"><strong class="pref-plan__pref-item">free</strong> option 2</li>
-                    <li class="pref-plan__option"><strong class="pref-plan__pref-item">unlimited</strong> option 3</li>
-                    <li class="pref-plan__option"><strong class="pref-plan__pref-item">unlimited</strong> option 4</li>
-                    <li class="pref-plan__option"><strong class="pref-plan__pref-item">1x</strong> option 5</li>
-                </ul>
-                <a href="#" class="pref-plan__submit button pref-plan_submit-exclusive">purchase</a>
-            </section>
-            <section class="pref-plan">
-                <h3 class="pref-plan__title">plan 3</h3>
-                <h4 class="pref-plan__price">$30/month</h4>
-                <ul class="pref-list">
-                    <li class="pref-plan__option"><strong class="pref-plan__pref-item">2x</strong> option 1</li>
-                    <li class="pref-plan__option"><strong class="pref-plan__pref-item">free</strong> option 2</li>
-                    <li class="pref-plan__option"><strong class="pref-plan__pref-item">unlimited</strong> option 3</li>
-                    <li class="pref-plan__option"><strong class="pref-plan__pref-item">unlimited</strong> option 4</li>
-                    <li class="pref-plan__option"><strong class="pref-plan__pref-item">1x</strong> option 5</li>
-                </ul>
-                <a href="#" class="pref-plan__submit button">purchase</a>
-            </section>
-        </div>
-    </section>
+<section class="feedback-block section container container_for-feedback" id="support">
+    <h2 class="section-title feedback-block_title">our customers <strong class="section-title_strong">love it!</strong></h2>
+    <div class="feedback-wrapper">
+        <figure class="feedback">
+            <a href="img/designer_Nicole_full.jpg" class="feedback__person-avatar feedback__person-avatar-position"><img src="img/designer_Nicole.jpg" alt="Nicole" class="feedback__person"></a>
+            <figcaption>
+                <a href="#" class="feedback__person-site feedback__item">Lorem ipsum</a>
+                <p class="feedback__person-position feedback__item">designer</p>
+            </figcaption>
+        </figure>
+        <figure class="feedback">
+            <a href="img/marketing_expert_Sofie_full.jpg" class="feedback__person-avatar feedback__person-avatar-position"><img src="img/marketing_expert_Sofie.jpg" alt="Sofie" class="feedback__person"></a>
+            <figcaption>
+                <a href="#" class="feedback__person-site feedback__item">Lorem ipsum</a>
+                <p class="feedback__person-position feedback__item">marketing expert</p>
+            </figcaption>
+        </figure>
+        <figure class="feedback">
+            <a href="img/photographer_Alicia_full.jpg" class="feedback__person-avatar feedback__person-avatar-position"><img src="img/photographer_Alicia.jpg" alt="Alicia" class="feedback__person"></a>
+            <figcaption>
+                <a href="#" class="feedback__person-site feedback__item">Lorem ipsum</a>
+                <p class="feedback__person-position feedback__item">photographer</p>
+            </figcaption>
+        </figure>
+        <figure class="feedback">
+            <a href="img/model_Jessica_full.jpg" class="feedback__person-avatar feedback__person-avatar-position"><img src="img/model_Jessica.jpg" alt="Jessica" class="feedback__person"></a>
+            <figcaption>
+                <a href="#tour" class="feedback__person-site feedback__item">Lorem ipsum</a>
+                <p class="feedback__person-position feedback__item">professional model</p>
+            </figcaption>
+        </figure>
+    </div>
+</section>
 
-    <section class="feedback-block section container container_for-feedback" id="support">
-        <h2 class="section-title feedback-block_title">our customers <strong class="section-title_strong">love it!</strong></h2>
-        <div class="feedback-wrapper">
-            <figure class="feedback">
-                <a href="img/t-pic.jpg" class="feedback__person-avatar" onclick="event.preventDefault(); getFullPhoto('img/t-pic.jpg')"><img src="img/pic.jpg" alt="Lora Ip" class="feedback__person"></a>
-                <figcaption>
-                    <a href="#" class="feedback__person-site feedback__item">Lorem ipsum</a>
-                    <p class="feedback__person-position feedback__item">designer</p>
-                </figcaption>
-            </figure>
-            <figure class="feedback">
-                <a href="img/t-pic1.jpg" class="feedback__person-avatar" onclick="event.preventDefault(); getFullPhoto('img/t-pic1.jpg')"><img src="img/pic1.jpg" alt="Lora Ips" class="feedback__person"></a>
-                <figcaption>
-                    <a href="#" class="feedback__person-site feedback__item">Lorem ipsum</a>
-                    <p class="feedback__person-position feedback__item">marketing expert</p>
-                </figcaption>
-            </figure>
-            <figure class="feedback">
-                <a href="img/t-pic2.jpg" class="feedback__person-avatar" onclick="event.preventDefault(); getFullPhoto('img/t-pic2.jpg')"><img src="img/pic2.jpg" alt="Lora I" class="feedback__person"></a>
-                <figcaption>
-                    <a href="#" class="feedback__person-site feedback__item">Lorem ipsum</a>
-                    <p class="feedback__person-position feedback__item">photographer</p>
-                </figcaption>
-            </figure>
-            <figure class="feedback">
-                <a href="img/t-pic3.jpg" class="feedback__person-avatar" onclick="event.preventDefault(); getFullPhoto('img/t-pic3.jpg')"><img src="img/pic3.jpg" alt="Lora Ipsu" class="feedback__person"></a>
-                <figcaption>
-                    <a href="#" class="feedback__person-site feedback__item">Lorem ipsum</a>
-                    <p class="feedback__person-position feedback__item">professional model</p>
-                </figcaption>
-            </figure>
-        </div>
-    </section>
+<aside class="social container container_for-social">
+    <h2 class="section-title social__title">Help us spread the word</h2>
+    <ul class="social-links" id="share-menu" role="group" tabindex="-1">
+        <li class="social-links__item"><a href="#" class="social-links__ext social-links_tw" aria-label="Twitter" title="Twitter"></a></li>
+        <li class="social-links__item"><a href="#" class="social-links__ext social-links_fb" aria-label="Facebook" title="Facebook"></a></li>
+        <li class="social-links__item"><a href="#" class="social-links__ext social-links_gp" aria-label="Google plus" title="Google plus"></a></li>
+        <li class="social-links__item"><a href="#" class="social-links__ext social-links_pi" aria-label="Pinterest" title="Pinterest"></a></li>
+        <li class="social-links__item"><a href="#" class="social-links__ext social-links_in" aria-label="LinkedIn" title="LinkedIn"></a></li>
+    </ul>
+    <a href="#tour" accesskey="q" class="up" title="to get to TOP press: 'Alt + Q' or 'Alt + Shift + Q'">^</a>
+</aside>
 
-    <aside class="social container container_for-social">
-        <h2 class="social social__title">Help us spread the word</h2>
-        <ul class="social-links">
-            <li class="social-links__item"><a href="#" class="social-links__ext social-links_tw"></a></li>
-            <li class="social-links__item"><a href="#" class="social-links__ext social-links_fb"></a></li>
-            <li class="social-links__item"><a href="#" class="social-links__ext social-links_gp"></a></li>
-            <li class="social-links__item"><a href="#" class="social-links__ext social-links_pi"></a></li>
-            <li class="social-links__item"><a href="#" class="social-links__ext social-links_in"></a></li>
-        </ul>
-    </aside>
 
-    <footer class="footer container container_for-footer">
-        <ul class="map container_for-map">
-            <li><a href="#" class="map__item nav-item">about</a></li>
-            <li><a href="#" class="map__item nav-item">careers</a></li>
-            <li><a href="#" class="map__item nav-item">privacy policy</a></li>
-            <li><a href="#" class="map__item nav-item">press & media</a></li>
-            <li><a href="#" class="map__item nav-item">contact</a></li>
-        </ul>
-        <aside class="footer__additional-info">
-            © 2013 Launchpad. All Rights Reserved | Designed by
-            <address class="footer__contact"><a href="#" class="footer__contact-link strong">w3layouts</a></address>
-        </aside>
-    </footer>
-    <script>
-        let img = document.createElement('img');
-        let shadowField = document.createElement('div');
+<footer class="footer container container_for-footer">
+    <ul class="map container_for-map">
+        <li><a href="#" class="map__item nav-item">about</a></li>
+        <li><a href="#" class="map__item nav-item">careers</a></li>
+        <li><a href="#" class="map__item nav-item">privacy policy</a></li>
+        <li><a href="#" class="map__item nav-item">press & media</a></li>
+        <li><a href="#" class="map__item nav-item">contact</a></li>
+    </ul>
+    <small class="footer__additional-info">
+        © 2013 Launchpad. All Rights Reserved | Designed by
+        <a href="#" class="footer__contact-link strong">w3layouts</a>
+    </small>
+</footer>
+<script>
+    var img = document.createElement('img'),
+        shadowField = document.createElement('div'),
+        support = document.getElementById('support');
 
-        function getFullPhoto(url) {
-            shadowField.className = 'shadow';
+    support.onclick = function (event) {
+        var target = event.target;
 
-            img.className = 'align';
-            img.src = url;
+        if (target.className.indexOf('feedback__person') !== -1 || target.className.indexOf('feedback__person-avatar') !== -1) {
+            event.preventDefault();
+            if (target.tagName !== 'IMG') getFullPhoto(target.href);
 
-            shadowField.appendChild(img);
-            document.body.appendChild(shadowField);
-
-            shadowField.addEventListener('click', closeImg);
+            //...for IE9
+            if (!target.classList && target.tagName === 'IMG') getFullPhoto(target.parentNode.href);
         }
-        
-        function closeImg() {
-            shadowField.classList.add('hide');
-            img.classList.add('hide');
-        }
-    </script>
+    };
+
+    function getFullPhoto(url) {
+        shadowField.className = 'shadow';
+        img.className = 'align';
+        img.src = url;
+
+        shadowField.appendChild(img);
+        document.body.appendChild(shadowField);
+
+        shadowField.onclick = function() { closeImg(); }
+    }
+
+    function closeImg() {
+        shadowField.className += ' hide';
+        img.className += ' hide';
+        img.src = '';
+    }
+</script>
 </body>
 </html>
