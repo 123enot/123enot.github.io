@@ -1291,6 +1291,14 @@ h1 {
 
 
 @media screen and (max-width: 380px) {
+    .section {
+        padding-top: 90px;
+    }
+
+    .section-title {
+        margin-bottom: 5px;
+    }
+
     .section-title {
         font-size: 140%;
     }
@@ -1329,11 +1337,17 @@ h1 {
         max-width: 240px;
     }
 
+    .feedback__caption {
+        margin-bottom: 15px;
+    }
+
     .social__title {
         font-size: 120%;
     }
 
     .social-links {
+        padding: 0 20px;
+
         text-align: center;
     }
 }
