@@ -5,6 +5,24 @@
     <option name="projects">
       <list>
         <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/vovchik_manko/ind_work_1_1.git" />
+          <option name="name" value="ind_work_1_1" />
+          <option name="namespace" value="vovchik_manko" />
+          <option name="sshUrl" value="git@gitlab.com:vovchik_manko/ind_work_1_1.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/vovchik_manko/ind_work_1_2.git" />
+          <option name="name" value="ind_work_1_2" />
+          <option name="namespace" value="vovchik_manko" />
+          <option name="sshUrl" value="git@gitlab.com:vovchik_manko/ind_work_1_2.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/vovchik_manko/ind_work_1_3.git" />
+          <option name="name" value="ind_work_1_3" />
+          <option name="namespace" value="vovchik_manko" />
+          <option name="sshUrl" value="git@gitlab.com:vovchik_manko/ind_work_1_3.git" />
+        </ProjectDto>
+        <ProjectDto>
           <option name="httpUrl" value="https://gitlab.com/vovchik_manko/spd-university-js-leo-boolean-algebra-person.git" />
           <option name="name" value="spd-university-js-leo-boolean-algebra-person" />
           <option name="namespace" value="vovchik_manko" />
