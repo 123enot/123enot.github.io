@@ -30,7 +30,7 @@ ul {
 
 li {
     -display: inline-block;
-    margin: 0 3px;
+    margin: 0 2px;
 }
 
 a {
@@ -72,15 +72,22 @@ img {
 }
 
 .link {
-    font-size: 13px;
+    font-size: 12px;
 
     display: inline-block;
-    padding: 5px 10px;
+    padding: 5px 8px;
 
     text-align: center;
     cursor: pointer;
 
     background-image: none;
+}
+
+@media screen and (min-width: 330px) {
+    .link {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
 }
 
 @media screen and (min-width: 768px) {
