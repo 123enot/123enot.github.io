@@ -368,7 +368,7 @@ img {
     font-size: 90%;
 }
 
-@media screen and (max-width: 480px) and (orientation: landscape) {
+@media screen and (max-width: 768px) and (orientation: landscape) {
     .l-about-product {
         padding-top: 40px;
     }
