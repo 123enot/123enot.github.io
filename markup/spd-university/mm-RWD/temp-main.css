@@ -83,7 +83,7 @@ img {
     background-image: none;
 }
 
-@media screen and (min-width: 330px) {
+@media screen and (min-width: 430px) {
     .link {
         font-size: 13px;
         padding: 5px 10px;
