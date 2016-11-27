@@ -72,10 +72,10 @@ img {
 }
 
 .link {
-    font-size: 12px;
+    font-size: 13px;
 
     display: inline-block;
-    padding: 2px 5px;
+    padding: 4px 8px;
 
     text-align: center;
     cursor: pointer;
@@ -85,7 +85,7 @@ img {
 
 @media screen and (min-width: 768px) {
     .link {
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
@@ -130,7 +130,7 @@ img {
 }
 
 .title-for-logo {
-    font-size: 15px;
+    font-size: 16px;
     text-transform: uppercase;
     color: #333;
 }
@@ -175,7 +175,7 @@ img {
     background-color: #ddd;
 }
 
-@media screen and (min-width: 405px) {
+@media screen and (min-width: 457px) {
     .header {
 
     }
