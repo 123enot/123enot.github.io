@@ -561,7 +561,7 @@ img {
 }
 
 .pref-plan--option {
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 1px;
 
     padding: 8px;
@@ -582,6 +582,7 @@ img {
 }
 
 .pref-plan-btn {
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
 
@@ -619,12 +620,13 @@ img {
     background-color: #1b8dfc;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (orientation: landscape) {
     .l-pref-plan {
         flex: 1 30%;
     }
 
     .pref-plan--option {
+        font-size: 15px;
         padding: 4px;
     }
 }
