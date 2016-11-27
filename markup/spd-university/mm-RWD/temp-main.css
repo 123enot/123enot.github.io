@@ -370,7 +370,7 @@ img {
 
 @media screen and (max-width: 800px) and (orientation: landscape) {
     .l-about-product {
-        padding-top: 40px;
+        padding-top: 20px;
     }
 
     .product-proto--img {
