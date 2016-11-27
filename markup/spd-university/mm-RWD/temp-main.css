@@ -83,7 +83,7 @@ img {
     background-image: none;
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 481px) {
     .link {
         font-size: 13px;
         padding: 5px 10px;
@@ -106,7 +106,7 @@ img {
 ----------------------------------------------------------------------------*/
 
 .header {
-
+    background-color: #fff;
 }
 
 .l-header {
@@ -128,7 +128,7 @@ img {
 }
 
 .link-logo {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .img-for-logo {
@@ -144,7 +144,7 @@ img {
 
 .logo--title {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 .logo--img {
@@ -181,11 +181,7 @@ img {
     background-color: #ddd;
 }
 
-@media screen and (min-width: 517px) {
-    .header {
-
-    }
-
+@media screen and (min-width: 480px) and (orientation: landscape) {
     .nav--list {
         flex-grow: 1;
         -ms-flex-pack: center;
@@ -201,7 +197,30 @@ img {
         color: #333;
         background-color: #ddd;
     }
-    
+
+    .link-for-nav:hover {
+        color: #eee;
+        background-color: #333;
+    }
+}
+
+@media screen and (min-width: 517px) {
+    .nav--list {
+        flex-grow: 1;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .link-logo {
+        flex-grow: 1;
+        margin-bottom: 0;
+    }
+
+    .link-for-nav {
+        color: #333;
+        background-color: #ddd;
+    }
+
     .link-for-nav:hover {
         color: #eee;
         background-color: #333;
@@ -221,7 +240,7 @@ img {
 
     .link-for-nav:hover {
         color: #333;
-        border-bottom: 1px solid #333;
+        box-shadow: 0 2px #333;
         background-color: #fff;
     }
 
@@ -257,9 +276,108 @@ img {
     left: 5px;
 }
 
+.section-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 200%;
+    font-weight: normal;
 
+    text-align: center;
+    text-transform: capitalize;
 
+    margin: 0;
+    -ms-flex: 1 100%;
+    flex: 1 100%;
+}
 
+.section-title-strong {
+    font-weight: bold;
+}
 
+.section-text {
+    text-align: center;
+    margin: 0;
+}
 
+/*-------------------------------------------------------------------------------
+                     ABOUT PRODUCT - DOWNLOAD - BANNER SECTION
+-------------------------------------------------------------------------------*/
+.about-product {
+    text-align: center;
+    letter-spacing: 1px;
+}
 
+.l-about-product {
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+.about-product--summary {
+    font-size: 15px;
+}
+
+.product-proto--img {
+    max-width: 100%;
+}
+
+.btn-download {
+    text-transform: uppercase;
+}
+
+.btn-download-for-proto {
+    color: #fff;
+    border: 1px solid #0a65be;
+    border-radius: 2px;
+
+    background-color: #3998f5;
+    background-image: linear-gradient(to bottom, #3998f5, #0c7fef);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 0 #3998f5;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.31);
+}
+
+.btn-download-for-proto:hover {
+    color: #fff;
+    background-image: linear-gradient(to bottom, #0c7fef, #3998f5);
+}
+
+.product-proto--download {
+    position: relative;
+
+    margin: 1rem auto;
+    padding: .5rem 1rem;
+    padding-right: 2rem;
+}
+
+.product-proto--download:after {
+    position: absolute;
+    top: 0;
+    right: 5px;
+
+    content: url(img/arrow.png);
+}
+
+.product-proto--caption {
+    font-size: 120%;
+    margin: 0;
+}
+
+.product-proto-strong {
+    color: #3998f5;
+}
+
+.small {
+    font-size: 90%;
+}
+
+@media screen and (max-width: 480px) and (orientation: landscape) {
+    .l-about-product {
+        padding-top: 40px;
+    }
+
+    .product-proto--img {
+        width: 80%;
+    }
+
+    .product-proto--download {
+        margin: 5px;
+    }
+}
