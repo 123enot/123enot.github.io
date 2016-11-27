@@ -411,7 +411,7 @@ img {
 .d-list--feature {
     position: relative;
 
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -421,7 +421,7 @@ img {
 }
 
 .l-d-list-data {
-    font-size: 14px;
+    font-size: 16px;
     max-width: 90%;
 }
 
