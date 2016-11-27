@@ -30,7 +30,7 @@ ul {
 
 li {
     -display: inline-block;
-    margin: 0 2px;
+    margin: 0 5px;
 }
 
 a {
@@ -121,7 +121,7 @@ img {
 }
 
 .link-logo {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .img-for-logo {
@@ -141,7 +141,6 @@ img {
 }
 
 .logo--img {
-    width: 1.5rem;
     vertical-align: middle;
 }
 
@@ -175,7 +174,7 @@ img {
     background-color: #ddd;
 }
 
-@media screen and (min-width: 457px) {
+@media screen and (min-width: 517px) {
     .header {
 
     }
