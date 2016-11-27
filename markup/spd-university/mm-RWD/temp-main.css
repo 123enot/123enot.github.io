@@ -405,8 +405,7 @@ img {
 .features--d-list {
     flex-flow: column wrap;
 
-    justify-content: center;
-    align-items: center;
+    justify-content: center; align-items: center;
 }
 
 .d-list--feature {
@@ -422,7 +421,8 @@ img {
 }
 
 .l-d-list-data {
-    max-width: 80%;
+    font-size: 14px;
+    max-width: 90%;
 }
 
 .d-list--data {
@@ -468,7 +468,6 @@ img {
 
 .features-media {
     max-width: 90%;
-    -min-height: 560px;
     margin: 0 auto;
     background: url(img/content-banner-img1.jpg) no-repeat center bottom;
     background-size: auto;
