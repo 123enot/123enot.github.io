@@ -75,7 +75,7 @@ img {
     font-size: 13px;
 
     display: inline-block;
-    padding: 4px 8px;
+    padding: 5px 10px;
 
     text-align: center;
     cursor: pointer;
@@ -121,7 +121,7 @@ img {
 }
 
 .link-logo {
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 
 .img-for-logo {
@@ -130,7 +130,7 @@ img {
 }
 
 .title-for-logo {
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
     color: #333;
 }
@@ -231,7 +231,7 @@ img {
     }
 
     .title-for-logo {
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
