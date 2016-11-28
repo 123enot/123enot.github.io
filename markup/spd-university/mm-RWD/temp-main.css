@@ -717,7 +717,6 @@ img {
 }
 
 .feedback--person-site {
-    -font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
 
@@ -805,7 +804,6 @@ img {
 ----------------------------------------------------------------------------*/
 
 .footer {
-    -font-family: 'Montserrat', sans-serif;
     color: #999;
     border-top: 2px solid #eee;
 }
