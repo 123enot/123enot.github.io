@@ -1,7 +1,6 @@
 body {
     font-family: 'Lato', Helvetica, Arial, sans-serif;
     font-size: 14px;
-    line-height: 1.4;
 
     width: 100%;
     min-width: 270px;
@@ -149,7 +148,6 @@ img {
     text-align: center;
     margin: 0;
 }
-
 
 .scroll-top {
     font-size: 20px;
@@ -349,11 +347,10 @@ img {
     left: 5px;
 }
 
-
-
 /*-------------------------------------------------------------------------------
                      ABOUT PRODUCT - DOWNLOAD - BANNER SECTION
 -------------------------------------------------------------------------------*/
+
 .about-product {
     text-align: center;
     letter-spacing: 1px;
