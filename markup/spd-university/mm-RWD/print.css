@@ -1,0 +1,137 @@
+@media print {
+    @page {
+        size: A4;
+        margin: .1in;
+    }
+
+    * {
+        color: black !important;
+        background: #fff !important;
+    }
+
+    body {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12pt;
+    }
+
+    .scroll-top {
+        visibility: hidden;
+    }
+
+    a:not(.header--logo) {
+        text-decoration: underline;
+    }
+
+    .header {
+        position: static;
+    }
+
+    .section:not(.about-product) {
+        page-break-before: auto;
+        width: 96%;
+    }
+
+    .l-section {
+        page-break-inside: avoid;
+        padding-top: 20pt;
+        padding-bottom: 5pt;
+    }
+
+    .section-title {
+        margin-bottom: 10pt;
+    }
+
+    .product-proto--download {
+        margin: 10pt auto;
+    }
+
+    .banner-content {
+        box-shadow: none;
+    }
+
+    .features-media {
+        min-height: 10pt;
+        margin-top: 30pt;
+    }
+
+    .features--d-list {
+        display: inline-block;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .d-list--feature,
+    .d-list--data {
+        position: static;
+        display: inline-block;
+    }
+
+    .d-list--feature {
+        min-width: 28%;
+        margin-bottom: 20pt;
+    }
+
+    .d-list--data {
+        font-size: 10pt;
+        min-width: 70%;
+    }
+
+    .pref-plan {
+        margin: 2% auto;
+        padding-bottom: 2pt;
+        border-radius: 5px;
+        border: 2pt solid #aaa;
+        box-shadow: none;
+    }
+
+    .pref-plan--title {
+        padding: 10pt;
+    }
+
+    .pref-plan--title-exclusive {
+        margin-top: -3pt;
+        padding-bottom: 12pt;
+        border-top: 1pt solid #aaa;
+    }
+
+    .pref-plan--price {
+        padding: 8pt;
+        border-top: 1pt solid #999;
+        border-bottom: 1pt solid #999;
+    }
+
+    .pref-plan--option {
+        padding: 5pt;
+        border-bottom: 1pt solid #ddd;
+    }
+
+    .pref-plan-btn-def {
+        width: 81.45%;
+        margin: 10pt auto;
+    }
+
+    .pref-list {
+        padding-top: 5pt;
+    }
+
+    .social {
+        padding-top: 40pt;
+        padding-bottom: 15pt;
+    }
+
+    .social-title {
+        margin-bottom: 5pt;
+    }
+
+    .social-links--item {
+        margin: 2pt 5pt;
+    }
+
+    .social-links--ext:after {
+        content: attr(title);
+    }
+
+    .footer {
+        padding-top: 10pt;
+    }
+}
