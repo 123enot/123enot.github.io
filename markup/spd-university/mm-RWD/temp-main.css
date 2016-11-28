@@ -120,7 +120,7 @@ img {
 
 .section-title {
     font-family: 'Lato', sans-serif;
-    font-size: 200%;
+    font-size: 240%;
     font-weight: normal;
 
     text-align: center;
@@ -139,6 +139,31 @@ img {
 .section-text {
     text-align: center;
     margin: 0;
+}
+
+
+.scroll-top {
+    font-size: 20px;
+    text-align: center;
+
+    border-radius: 5px;
+    color: #fff;
+    background-color: #3998f5;
+    opacity: .6;
+    transition: opacity .35s ease;
+}
+
+.l-top {
+    position: fixed;
+    right: 10px;
+    bottom: 100px;
+
+    width: 10px;
+    padding: 5px 10px 0;
+}
+
+.scroll-top:hover {
+    opacity: .9;
 }
 
 /*----------------------------------------------------------------------------
@@ -654,7 +679,7 @@ img {
 
 .l-feedback {
     max-width: 320px;
-    margin: 10px 5px;
+    margin: 15px 5px;
 
     flex: 1 1 25%;
 }
@@ -708,3 +733,69 @@ img {
     letter-spacing: 1px;
     text-transform: capitalize;
 }
+
+/*----------------------------------------------------------------------------
+                                SOCIAL NETWORK SECTION
+----------------------------------------------------------------------------*/
+
+.social--follow-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links--item {
+    margin: 10px;
+}
+
+.social-links--ext {
+    padding: 20px;
+    border-radius: 50%;
+    background: transparent url(img/img-sprite.png) no-repeat;
+}
+
+.social-links-tw {
+    background-position: -1px -1px;
+}
+
+.social-links-fb {
+    background-position: -56px 0;
+}
+
+.social-links-gp {
+    background-position: -112px 0;
+}
+
+.social-links-pi {
+    background-position: -169px 0;
+}
+
+.social-links-in {
+    background-position: -226px 0;
+}
+
+.social-links-tw:hover {
+    background-position: -1px -43px;
+}
+
+.social-links-fb:hover {
+    background-position: -56px -42px;
+}
+
+.social-links-gp:hover {
+    background-position: -112px -42px;
+}
+
+.social-links-pi:hover {
+    background-position: -169px -42px;
+}
+
+.social-links-in:hover {
+    background-position: -226px -42px;
+}
+
