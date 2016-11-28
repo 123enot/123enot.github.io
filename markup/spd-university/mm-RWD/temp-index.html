@@ -150,5 +150,53 @@
     <a href="#tour" accesskey="q" class="scroll-top l-top" title="to get to TOP press: 'Alt + Q' or 'Alt + Shift + Q'">^</a>
 </aside>
 
+<footer class="footer container footer-flex">
+    <ul class="map container footer--map">
+        <li><a href="#" class="link footer--link link-for-map">about</a></li>
+        <li><a href="#" class="link footer--link link-for-map">careers</a></li>
+        <li><a href="#" class="link footer--link link-for-map">privacy policy</a></li>
+        <li><a href="#" class="link footer--link link-for-map">press & media</a></li>
+        <li><a href="#" class="link footer--link link-for-map">contact</a></li>
+    </ul>
+    <small class="footer--additional-info">
+        © 2013 Launchpad. All Rights Reserved | Designed by
+        <a href="#" class="link footer--contact-link strong">w3layouts</a>
+    </small>
+</footer>
+
+<script>
+    var img = document.createElement('img'),
+            shadowField = document.createElement('div'),
+            support = document.getElementById('support');
+
+    support.onclick = function (event) {
+        var target = event.target;
+
+        if (window.matchMedia("(min-width: 480px)").matches) {
+            if (target.className.indexOf('feedback--person') !== -1 || target.className.indexOf('feedback--person-avatar') !== -1) {
+                event.preventDefault();
+                if (target.tagName !== 'IMG') getFullPhoto(target.href);
+                //...for IE9
+                if (!target.classList && target.tagName === 'IMG') getFullPhoto(target.parentNode.href);
+            }
+        } else event.preventDefault();
+    };
+
+    function getFullPhoto(url) {
+        shadowField.className = 'lock-screen';
+        img.className = 'align-img';
+        img.src = url;
+        shadowField.appendChild(img);
+        document.body.appendChild(shadowField);
+        shadowField.onclick = function() { closeImg(); }
+    }
+
+    function closeImg() {
+        shadowField.className += ' hide';
+        img.className += ' hide';
+        img.src = '';
+    }
+</script>
+
 </body>
 </html>

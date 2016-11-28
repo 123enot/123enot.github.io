@@ -1,10 +1,6 @@
-html {
-
-}
-
 body {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.4;
 
     width: 100%;
@@ -163,6 +159,7 @@ img {
 }
 
 .scroll-top:hover {
+    color: #fff;
     opacity: .9;
 }
 
@@ -738,6 +735,10 @@ img {
                                 SOCIAL NETWORK SECTION
 ----------------------------------------------------------------------------*/
 
+.social {
+    padding-bottom: 20px;
+}
+
 .social--follow-list {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -799,3 +800,78 @@ img {
     background-position: -226px -42px;
 }
 
+/*----------------------------------------------------------------------------
+                            FOOTER SECTION
+----------------------------------------------------------------------------*/
+
+.footer {
+    -font-family: 'Montserrat', sans-serif;
+    color: #999;
+    border-top: 2px solid #eee;
+}
+
+.footer-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer--additional-info {
+    text-align: center;
+}
+
+.strong {
+    color: #3998f5;
+}
+
+.footer--contact-link:hover {
+    color: #333;
+}
+
+.map {
+    margin: 5px;
+}
+
+.footer--map {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.link-for-map {
+    text-transform: capitalize;
+}
+
+/*----------------------------------------------------------------------------
+                            OTHER STYLES
+----------------------------------------------------------------------------*/
+
+.lock-screen {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: #333;
+    opacity: .99;
+}
+
+.align-img {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    max-width: 100%;
+    margin: auto;
+}
+
+.hide {
+    display: none;
+}
