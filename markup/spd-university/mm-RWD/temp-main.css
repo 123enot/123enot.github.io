@@ -437,14 +437,15 @@ img {
 }
 
 .d-list {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .features--d-list {
     flex-flow: column wrap;
 
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .d-list--feature {
@@ -467,7 +468,7 @@ img {
 }
 
 .d-list--data {
-    text-align: left;   /* for IE9 */
+    text-align: left;       /* for IE9 */
     background-color: rgba(247,247,247, .1);
 }
 
