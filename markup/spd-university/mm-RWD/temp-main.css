@@ -606,7 +606,6 @@ img {
 }
 
 .pref-list {
-    font-weight: lighter;
     padding-top: 10px;
 }
 
@@ -620,7 +619,6 @@ img {
 }
 
 .pref-plan-strong {
-    font-weight: lighter;
     text-transform: capitalize;
 
     color: #1b8dfc;
