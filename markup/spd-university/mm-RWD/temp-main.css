@@ -133,6 +133,7 @@ img {
 
 .section-title-strong {
     font-weight: bold;
+    text-transform: lowercase;
 }
 
 .section-text {
@@ -159,7 +160,8 @@ img {
 .header-flex {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    -ms-flex-pack: justify; justify-content: space-around;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
     -ms-flex-align: center;
     align-items: center;
 }
@@ -199,7 +201,8 @@ img {
 
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
-    -ms-flex-pack: justify; justify-content: space-around;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
 }
 
 .link-for-nav {
@@ -220,7 +223,8 @@ img {
     .nav--list {
         flex-grow: 1;
         -ms-flex-pack: center;
-        justify-content: center; }
+        justify-content: center;
+    }
 
     .link-logo {
         flex-grow: 1;
@@ -242,7 +246,8 @@ img {
     .nav--list {
         flex-grow: 1;
         -ms-flex-pack: center;
-        justify-content: center; }
+        justify-content: center;
+    }
 
     .link-logo {
         flex-grow: 1;
@@ -405,7 +410,8 @@ img {
 .features--d-list {
     flex-flow: column wrap;
 
-    justify-content: center; align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .d-list--feature {
@@ -631,4 +637,74 @@ img {
     }
 }
 
+/*----------------------------------------------------------------------------
+                            SUPPORT - FEEDBACK SECTION
+----------------------------------------------------------------------------*/
 
+.feedback-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.feedback {
+    text-align: center;
+}
+
+.l-feedback {
+    max-width: 320px;
+    margin: 10px 5px;
+
+    flex: 1 1 25%;
+}
+
+.feedback--person {
+    min-width: 180px;
+    max-width: 95%;
+
+    border: 7px solid #fff;
+    box-shadow: 0 0 7px #aaa;
+}
+
+.feedback--person-avatar {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.feedback--person-avatar:after {
+    position: absolute;
+    margin: 0;
+    content: url(img/zoom.png);
+    opacity: 0;
+}
+
+.zoom-position:after {
+    top: 7px;
+    left: 135px;
+    transition: all ease-in 0.2s;
+}
+
+.feedback--person-avatar:hover:after {
+    opacity: .9;
+}
+
+.zoom-position:hover:after {
+    top: 95px;
+}
+
+.feedback--person-site {
+    -font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.feedback--person-site:hover {
+    color: #3998f5;
+}
+
+.feedback--person-position {
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
