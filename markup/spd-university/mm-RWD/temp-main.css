@@ -106,6 +106,9 @@ img {
 
 
 .l-section {
+    max-width: 1360px;
+
+    margin: 0 auto;
     padding-top: 90px;
 }
 
@@ -118,6 +121,12 @@ img {
 @media screen and (min-width: 768px) {
     .l-section {
         padding-top: 70px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .l-section {
+        padding-bottom: 70px;
     }
 }
 
@@ -287,6 +296,7 @@ img {
         flex-grow: 1;
         margin-bottom: 0;
     }
+
     .link-for-nav {
         color: #333;
         background-color: #ddd;
@@ -354,10 +364,6 @@ img {
 .about-product {
     text-align: center;
     letter-spacing: 1px;
-}
-
-.l-about-product {
-    -padding-bottom: 60px;
 }
 
 .about-product--summary {
@@ -434,18 +440,17 @@ img {
     width: 100%;
     background-color: #f7f7f7;
     box-shadow: inset 0 5px 20px 0 #ddd, inset 0 -5px 20px 0 #ddd;
+
+    text-align: center;
 }
 
 .d-list {
-    width: 90%;
-    margin: 0 auto;
+    max-width: 90%;
+    display: inline-block;
 }
 
 .features--d-list {
-    flex-flow: column wrap;
-
-    justify-content: center;
-    align-items: flex-start;
+    text-align: left;
 }
 
 .d-list--feature {
@@ -453,23 +458,14 @@ img {
 
     font-size: 15px;
     font-weight: bold;
-
-    background-color: rgba(247,247,247, .1);
 }
 
 .l-d-list-item {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin: 10px auto 5px;
 }
 
 .l-d-list-data {
     font-size: 14px;
-    max-width: 90%;
-}
-
-.d-list--data {
-    text-align: left;       /* for IE9 */
-    background-color: rgba(247,247,247, .1);
 }
 
 .d-list--feature:after {
@@ -513,12 +509,20 @@ img {
     max-width: 90%;
     padding-bottom: 10px;
     margin: 0 auto;
-    background: url(img/content-banner-img1.jpg) no-repeat center center;
-    background-size: auto;
+}
 
-    background-blend-mode: color;
-    background-color: rgba(247, 247, 247, .8);
-    box-shadow: inset 0 -20px 20px -20px #ddd;
+@media screen and (min-width: 1024px) {
+    .banner-content {
+        text-align: left;
+    }
+    
+    .features-media {
+        background: url(img/content-banner-img1.jpg) no-repeat right center;
+        background-size: auto;
+
+        background-blend-mode: color;
+        background-color: rgba(247, 247, 247, .7);
+    }
 }
 
 /*----------------------------------------------------------------------------
@@ -875,6 +879,10 @@ img {
 
     color: #999;
     border-top: 2px solid #eee;
+}
+
+.l-footer {
+    padding: 30px;
 }
 
 .footer-flex {

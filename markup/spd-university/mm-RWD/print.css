@@ -55,29 +55,26 @@
     }
 
     .features--d-list {
-        display: inline-block;
         margin: 0 auto;
         padding: 0;
     }
 
     .d-list--feature,
     .d-list--data {
-        position: static;
-        display: inline-block;
+        display: block;
+        text-align: center;
     }
 
     .d-list--feature {
-        min-width: 28%;
-        margin-bottom: 20pt;
+        margin-top: 10pt;
     }
 
     .d-list--data {
         font-size: 10pt;
-        min-width: 70%;
     }
 
     .pref-plan {
-        margin: 2% auto;
+        margin: 5pt auto;
         padding-bottom: 2pt;
         border-radius: 5px;
         border: 2pt solid #aaa;
