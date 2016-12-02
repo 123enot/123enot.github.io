@@ -253,6 +253,10 @@ img {
     justify-content: space-around;
 }
 
+.nav-flex--item {
+    margin: 0 4px;
+}
+
 .link-for-nav {
     font-weight: bold;
     letter-spacing: 2px;
