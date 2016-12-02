@@ -111,6 +111,7 @@ img {
 
     margin: 0 auto;
     padding-top: 90px;
+    padding-bottom: 40px;
 }
 
 @media screen and (min-width: 493px) and (max-width: 767px) and (orientation: landscape) {
@@ -422,8 +423,8 @@ img {
 .product-proto--download {
     position: relative;
 
-    margin: 1rem auto;
-    padding: .5rem 1rem;
+    margin: 1.5rem auto;
+    padding: .5rem 1.2rem;
     padding-right: 2rem;
 }
 
@@ -954,7 +955,7 @@ img {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
-    -ms-flex-pack: distribute;
+    -ms-flex-pack: justify;
     justify-content: space-around;
 
     -webkit-box-align: center;
