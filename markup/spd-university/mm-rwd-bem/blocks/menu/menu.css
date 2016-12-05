@@ -30,6 +30,10 @@
     background-color: #ddd;
 }
 
+.menu__link_for-footer {
+    font-size: 14px;
+}
+
 @media screen and (min-width: 480px) and (orientation: landscape) {
     .menu__link_for-nav {
         color: #333;

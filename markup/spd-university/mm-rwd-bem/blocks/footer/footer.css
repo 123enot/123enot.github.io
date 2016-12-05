@@ -56,7 +56,7 @@
     justify-content: center;
 }
 
-@media screen and (min-width: 945px) {
+@media screen and (min-width: 895px) {
     .footer__menu {
         margin-bottom: 0;
     }
