@@ -23,6 +23,12 @@
           <option name="sshUrl" value="git@gitlab.com:vovchik_manko/ind_work_1_3.git" />
         </ProjectDto>
         <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/vovchik_manko/spd-university-js-igor-bem.git" />
+          <option name="name" value="spd-university-js-igor-bem" />
+          <option name="namespace" value="vovchik_manko" />
+          <option name="sshUrl" value="git@gitlab.com:vovchik_manko/spd-university-js-igor-bem.git" />
+        </ProjectDto>
+        <ProjectDto>
           <option name="httpUrl" value="https://gitlab.com/vovchik_manko/spd-university-js-leo-boolean-algebra-person.git" />
           <option name="name" value="spd-university-js-leo-boolean-algebra-person" />
           <option name="namespace" value="vovchik_manko" />
@@ -87,6 +93,12 @@
           <option name="name" value="spd-university-js-mm-rwd-part01" />
           <option name="namespace" value="vovchik_manko" />
           <option name="sshUrl" value="git@gitlab.com:vovchik_manko/spd-university-js-mm-rwd-part01.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/vovchik_manko/spdu-home-task-08.git" />
+          <option name="name" value="spdu-home-task-08" />
+          <option name="namespace" value="vovchik_manko" />
+          <option name="sshUrl" value="git@gitlab.com:vovchik_manko/spdu-home-task-08.git" />
         </ProjectDto>
         <ProjectDto>
           <option name="httpUrl" value="https://gitlab.com/vovchik_manko/spdu-practice-08.git" />
